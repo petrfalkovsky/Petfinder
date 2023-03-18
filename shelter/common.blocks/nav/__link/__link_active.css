@@ -1,0 +1,16 @@
+.nav__link_active {
+  color: var(--fint-color__nav__link_active);
+  font-size: var(--font-size__nav__link);
+  font-family: var(--font-family__nav__link);
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.nav__link_active-border {
+  margin-top: 0.313rem;
+  height: 0.188rem;
+  align-self: stretch;
+  background-color: var(--primary-color-dark);
+}

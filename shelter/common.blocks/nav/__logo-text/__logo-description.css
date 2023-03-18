@@ -1,0 +1,11 @@
+.nav__logo-description {
+  color: var(--logo-description-color);
+  font-size: var(--font-size__logo-description);
+  font-family: var(--font-family__logo-description);
+  letter-spacing: 0.1em;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+  margin: 0;
+}

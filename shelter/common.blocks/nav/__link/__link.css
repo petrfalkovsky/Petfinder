@@ -1,0 +1,4 @@
+.nav__link {
+  color: var(--fint-color__nav__link);
+  text-decoration: none;
+}
