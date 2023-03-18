@@ -1,0 +1,8 @@
+.button_elevated {
+  background-color: var(--color-primary_dark);
+}
+
+.button_elevated:hover {
+  background-color: var(--color-primary_light);
+  cursor: pointer;
+}

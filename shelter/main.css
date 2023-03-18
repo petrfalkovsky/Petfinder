@@ -9,6 +9,12 @@
 @import "common.blocks/nav/__logo-text/__logo-title.css";
 @import "common.blocks/nav/__logo-text/__logo-description.css";
 @import "common.blocks/hero/__back/__back.css";
+@import "common.blocks/hero/__content/__content-text.css";
+@import "common.blocks/hero/__content/__content-img.css";
+@import "common.blocks/button/button.css";
+@import "common.blocks/button/__elevated/__elevated.css";
+@import "common.blocks/hero/__content/__content-container.css";
+@import "common.blocks/hero/__container/__container.css";
 @import "";
 @import "";
 @import "";
@@ -22,9 +28,23 @@
 @import "";
 @import "";
 @import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--font-family__h1);
+  font-weight: var(--font-weight__h1);
+  font-size: var(--font-size__h1);
+  line-height: var(--line-height__h1);
+  margin: 0;
+}
+
+p {
+  font-family: var(--font-family__p);
+  font-weight: var(--font-weight__p);
+  font-size: var(--font-size__p);
+  line-height: var(--line-height__p);
+  margin: 0;
+}

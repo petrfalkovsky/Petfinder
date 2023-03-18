@@ -1,4 +1,4 @@
 .hero__back {
-  background-image: var(--hero-background);
+  background-image: var(--gradient_hero-background);
   background-blend-mode: multiply;
 }
