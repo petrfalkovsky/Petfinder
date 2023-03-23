@@ -1,5 +1,5 @@
 #about h2 {
-  color: var(--color__about-section__h2);
+  color: var(--color__sections__h2);
   line-height: var(--line-height__h2);
 }
 

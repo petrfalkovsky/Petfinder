@@ -13,18 +13,20 @@
 @import "common.blocks/hero/__content/__content-img.css";
 @import "common.blocks/button/button.css";
 @import "common.blocks/button/__elevated/__elevated.css";
+@import "common.blocks/button/__outlined/__outlined.css";
+@import "common.blocks/button/__outlined/__outlined_round.css";
 @import "common.blocks/hero/__content/__content-container.css";
 @import "common.blocks/hero/__container/__container.css";
 @import "common.blocks/about/__back/__back.css";
 @import "common.blocks/about/__container/__container.css";
 @import "common.blocks/about/__content/__content-text.css";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "common.blocks/our-friends/__container/__container.css";
+@import "common.blocks/our-friends/__back/__back.css";
+@import "common.blocks/our-friends/__content/__content-text.css";
+@import "common.blocks/our-friends/__slider-containers/__slider-container.css";
+@import "common.blocks/our-friends/__slider-containers/__slider-inner-container.css";
+@import "common.blocks/card/card.css";
+@import "common.blocks/zoom/zoom.css";
 @import "";
 @import "";
 @import "";
@@ -37,6 +39,10 @@
 @font-face {
   font-family: "Georgia";
   src: url("assets/fonts/georgia/georgia-regular.ttf");
+}
+
+* {
+  transition: all 0.3s ease-out;
 }
 
 body {
@@ -67,4 +73,8 @@ p {
   font-size: var(--font-size__p);
   line-height: var(--line-height__p);
   margin: 0;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }

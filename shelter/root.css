@@ -6,7 +6,7 @@
   --color__primary_light: #fddcc4;
   --color__logo-description: #fff;
   --color__hero-section__h1: #fff;
-  --color__about-section__h2: #545454;
+  --color__sections__h2: #545454;
   --color__hero-section__p: #cdcdcd;
   --color__about-section__p: #545454;
 
@@ -14,6 +14,8 @@
   --gradient__hero-background: url(noise_lines_transparent@2X.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
   --color__white-background: #ffffff;
+  --color__white-darker-background: #f6f6f6;
+  --color__card-background: #fafafa;
 
   /* Sizes */
   --font-size__nav__link: 0.938rem;

@@ -1,8 +1,17 @@
-.button_elevated {
+.button__elevated {
   background-color: var(--color__primary_dark);
+  border: none;
 }
 
-.button_elevated:hover {
+.button__elevated:hover {
   background-color: var(--color__primary_light);
   cursor: pointer;
+}
+
+#hero .button__elevated.width {
+  width: 12.938rem;
+}
+
+#our-friends .button__elevated.width {
+  width: 16.313rem;
 }

@@ -1,0 +1,8 @@
+#our-friends .slider__button .button__outlined.width {
+  width: 3.25rem;
+}
+
+.button__outlined img {
+  display: block;
+  margin: auto;
+}

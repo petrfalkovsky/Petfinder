@@ -1,0 +1,11 @@
+#our-friends h2 {
+  color: var(--color__sections__h2);
+  max-width: 25rem;
+  text-align: center;
+}
+
+#our-friends p {
+  color: var(--color__hero-section__p);
+  max-width: 28.8rem;
+  padding-bottom: 2.875rem;
+}

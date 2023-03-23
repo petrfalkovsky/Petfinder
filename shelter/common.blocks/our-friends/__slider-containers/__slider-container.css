@@ -1,0 +1,8 @@
+.our-friends__slider-container {
+  max-width: 75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.313rem;
+}
