@@ -2,35 +2,40 @@
   /* Colors */
   --font-color__nav__link: #cdcdcd;
   --font-color__nav__link_active: #fafafa;
-  --color-primary_dark: #f1cdb3;
-  --color-primary_light: #fddcc4;
-  --color-logo-description: #fff;
+  --color__primary_dark: #f1cdb3;
+  --color__primary_light: #fddcc4;
+  --color__logo-description: #fff;
   --color__hero-section__h1: #fff;
+  --color__about-section__h2: #545454;
   --color__hero-section__p: #cdcdcd;
+  --color__about-section__p: #545454;
 
-  /* Gradients */
-  --gradient_hero-background: url(noise_lines_transparent@2X.png),
+  /* Background Colors */
+  --gradient__hero-background: url(noise_lines_transparent@2X.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  --color__white-background: #ffffff;
 
   /* Sizes */
   --font-size__nav__link: 0.938rem;
   --font-size__logo-title: 2rem;
-  --font-size__h1: 2.75rem;
   --font-size__logo-description: 0.813rem;
+  --font-size__h1: 2.75rem;
+  --font-size__h2: 2.18rem;
   --font-size__p: 0.938rem;
 
   /* Line Heghts */
   --line-height__h1: 3.575rem;
+  --line-height__h2: 2.813rem;
   --line-height__p: 1.5rem;
   --line-height__button: 1.063rem;
 
   /* Font Weight */
-  --font-weight__h1: 400;
+  --font-weight__h: 400;
   --font-weight__p: 400;
   --font-weight__button: 400;
 
   /* Font-family:  */
-  --font-family__h1: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-family__h: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --font-family__p: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;

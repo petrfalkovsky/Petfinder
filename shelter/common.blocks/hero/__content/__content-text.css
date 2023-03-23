@@ -1,10 +1,10 @@
-h1 {
+#hero h1 {
   color: var(--color__hero-section__h1);
   max-width: 20rem;
   padding-bottom: 3.125rem;
 }
 
-p {
+.hero__content-conainer p {
   color: var(--color__hero-section__p);
   max-width: 28.8rem;
   padding-bottom: 2.875rem;

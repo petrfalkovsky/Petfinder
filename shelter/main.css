@@ -15,6 +15,9 @@
 @import "common.blocks/button/__elevated/__elevated.css";
 @import "common.blocks/hero/__content/__content-container.css";
 @import "common.blocks/hero/__container/__container.css";
+@import "common.blocks/about/__back/__back.css";
+@import "common.blocks/about/__container/__container.css";
+@import "common.blocks/about/__content/__content-text.css";
 @import "";
 @import "";
 @import "";
@@ -25,20 +28,37 @@
 @import "";
 @import "";
 @import "";
-@import "";
-@import "";
-@import "";
+
+@font-face {
+  font-family: "Arial";
+  src: url("assets/fonts/arial/arial-regular.ttf");
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("assets/fonts/georgia/georgia-regular.ttf");
+}
 
 body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-family__h);
+  font-weight: var(--font-weight__h);
+  margin: 0;
+}
+
 h1 {
-  font-family: var(--font-family__h1);
-  font-weight: var(--font-weight__h1);
   font-size: var(--font-size__h1);
   line-height: var(--line-height__h1);
-  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__h2);
 }
 
 p {
