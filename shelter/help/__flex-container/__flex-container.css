@@ -1,0 +1,9 @@
+.help__flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 3.438rem;
+}

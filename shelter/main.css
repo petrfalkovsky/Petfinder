@@ -27,6 +27,13 @@
 @import "common.blocks/our-friends/__slider-containers/__slider-inner-container.css";
 @import "common.blocks/card/card.css";
 @import "common.blocks/zoom/zoom.css";
+@import "help/help.css";
+@import "help/__content/__content-text.css";
+@import "help/__flex-container/__flex-container.css";
+@import "help/__flex-container/__flex-item.css";
+@import "";
+@import "";
+@import "";
 @import "";
 @import "";
 @import "";
@@ -65,6 +72,10 @@ h1 {
 h2 {
   font-size: var(--font-size__h2);
   line-height: var(--line-height__h2);
+}
+
+h3 {
+  font-size: var(--font-size__h3);
 }
 
 p {

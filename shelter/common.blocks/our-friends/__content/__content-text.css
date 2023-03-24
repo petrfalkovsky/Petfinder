@@ -4,8 +4,6 @@
   text-align: center;
 }
 
-#our-friends p {
-  color: var(--color__hero-section__p);
-  max-width: 28.8rem;
-  /* padding-bottom: 2.875rem; */
+#our-friends h3 {
+  color: var(--color__sections__h2);
 }

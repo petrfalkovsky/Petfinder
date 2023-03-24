@@ -3,6 +3,7 @@ button {
   font-weight: var(--font-weight__button);
   font-size: var(--line-height__button);
   line-height: var(--line-height__button);
+  color: var(--font-color__button);
   border-radius: 7rem;
   height: 3.25rem;
 }

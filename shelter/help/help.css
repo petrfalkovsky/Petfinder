@@ -1,0 +1,11 @@
+#help main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+  gap: 3.75rem;
+  max-width: 66.25rem;
+  margin: auto;
+}

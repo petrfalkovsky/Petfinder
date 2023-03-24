@@ -9,6 +9,8 @@
   --color__sections__h2: #545454;
   --color__hero-section__p: #cdcdcd;
   --color__about-section__p: #545454;
+  --color__help-section__p: #545454;
+  --font-color__button: #292929;
 
   /* Background Colors */
   --gradient__hero-background: radial-gradient(
@@ -26,6 +28,7 @@
   --font-size__logo-description: 0.813rem;
   --font-size__h1: 2.75rem;
   --font-size__h2: 2.18rem;
+  --font-size__h3: 1.25rem;
   --font-size__p: 0.938rem;
 
   /* Line Heghts */
@@ -33,6 +36,7 @@
   --line-height__h2: 2.813rem;
   --line-height__p: 1.5rem;
   --line-height__button: 1.063rem;
+  --line-height__p-115: 1.438rem;
 
   /* Font Weight */
   --font-weight__h: 400;
@@ -51,5 +55,9 @@
   --font-family__nav__link: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --font-family__button: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-family__georgia: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-family__arial: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
