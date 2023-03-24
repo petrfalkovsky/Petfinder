@@ -7,5 +7,5 @@
 #our-friends p {
   color: var(--color__hero-section__p);
   max-width: 28.8rem;
-  padding-bottom: 2.875rem;
+  /* padding-bottom: 2.875rem; */
 }

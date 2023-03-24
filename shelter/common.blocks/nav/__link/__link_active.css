@@ -1,4 +1,5 @@
 .nav__link_active {
+  cursor: default;
   color: var(--font-color__nav__link_active);
   font-size: var(--font-size__nav__link);
   font-family: var(--font-family__nav__link);
