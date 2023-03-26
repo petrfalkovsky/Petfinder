@@ -1,5 +1,4 @@
 @import "root.css";
-@import "common.blocks/main__hero/main__hero.css";
 @import "common.blocks/nav/nav.css";
 @import "common.blocks/nav/__item/__item.css";
 @import "common.blocks/nav/__link/__link.css";
@@ -58,6 +57,12 @@
   transition: all 0.3s ease-out;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -96,4 +101,8 @@ p {
 
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+a {
+  text-decoration: none;
 }

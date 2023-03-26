@@ -6,3 +6,11 @@
 .nav__link:hover {
   color: var(--font-color__nav__link_active);
 }
+
+#pets-page .nav__link {
+  color: var(--font-color__nav__link_dark);
+}
+
+#pets-page .nav__link:hover {
+  color: var(--font-color__nav__link_dark_active);
+}

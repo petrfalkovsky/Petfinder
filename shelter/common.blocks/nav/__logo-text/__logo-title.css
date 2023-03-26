@@ -11,3 +11,7 @@
   padding-bottom: 0.313rem;
   margin: 0;
 }
+
+#pets-page .nav__logo-title {
+  color: var(--color__sections__h2);
+}

@@ -13,3 +13,7 @@
   max-width: 75rem;
   margin: 0 auto;
 }
+
+.nav__back {
+  background-color: var(--color__white-background);
+}

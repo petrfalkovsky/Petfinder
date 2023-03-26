@@ -15,3 +15,8 @@
   align-self: stretch;
   background-color: var(--color__primary_dark);
 }
+
+#pets-page .nav__link_active {
+  color: var(--font-color__nav__link_dark_active);
+  font-weight: 600;
+}

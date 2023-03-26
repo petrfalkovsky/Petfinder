@@ -23,10 +23,12 @@
     <section id="hero" class="hero__back">
       <header>
         <nav class="nav">
-          <div class="nav__logo">
-            <logo class="nav__logo-title">Petfinder</logo>
-            <p class="nav__logo-description">Shelter for pets in Almaty</p>
-          </div>
+          <a href="#">
+            <div class="nav__logo">
+              <logo class="nav__logo-title">Petfinder</logo>
+              <p class="nav__logo-description">Shelter for pets in Almaty</p>
+            </div>
+          </a>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link nav__link_active">
@@ -35,13 +37,13 @@
               <div class="nav__link_active-border"></div>
             </li>
             <li class="nav__item">
-              <a href="/pets/pets.html" class="nav__link"> Our pets </a>
+              <a href="/pets.html" class="nav__link"> Our pets </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> Help the shelter </a>
+              <a href="#help" class="nav__link"> Help the shelter </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"> Contacts </a>
+              <a href="#footer" class="nav__link"> Contacts </a>
             </li>
           </ul>
         </nav>
@@ -54,7 +56,11 @@
                 extremely wide and open heart. He or she will love you more than
                 anybody else in the world, you will see!
               </p>
-              <button class="button__elevated width">Make a friend</button>
+              <button
+                onclick="document.location='#our-friends'"
+                class="button__elevated width">
+                Make a friend
+              </button>
             </div>
             <img
               src="assets/images/start-screen-puppy.png"
@@ -163,7 +169,11 @@
             </div>
           </div>
 
-          <button class="button__elevated width">Get to know the rest</button>
+          <button
+            onclick="document.location='/pets.html'"
+            class="button__elevated width">
+            Get to know the rest
+          </button>
         </div>
       </main>
     </section>
@@ -227,12 +237,14 @@
               make a donation
             </h2>
             <h3>Name of the bank / Type of bank account</h3>
-            <div class="donat__card-number">
-              <div class="start"></div>
-              <img src="assets/icons/credit-card.png" alt="" />
-              <h4>8380 2880 8028 8791 7435</h4>
-              <div class="end"></div>
-            </div>
+            <a href="#!">
+              <div class="donat__card-number">
+                <div class="start"></div>
+                <img src="assets/icons/credit-card.png" alt="" />
+                <h4>8380 2880 8028 8791 7435</h4>
+                <div class="end"></div>
+              </div>
+            </a>
             <p>
               Legal information and lorem ipsum dolor sit amet, consectetur
               adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed

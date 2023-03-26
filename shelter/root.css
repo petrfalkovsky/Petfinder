@@ -2,6 +2,8 @@
   /* Colors */
   --font-color__nav__link: #cdcdcd;
   --font-color__nav__link_active: #fafafa;
+  --font-color__nav__link_dark: #545454;
+  --font-color__nav__link_active_dark: #292929;
   --color__primary_dark: #f1cdb3;
   --color__primary_light: #fddcc4;
   --color__logo-description: #fff;
