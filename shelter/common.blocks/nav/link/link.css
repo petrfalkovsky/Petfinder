@@ -1,0 +1,16 @@
+.navlink {
+  color: var(--font-colornavlink);
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: var(--font-colornavlink_active);
+}
+
+#pets-page .navlink {
+  color: var(--font-colornavlink_dark);
+}
+
+#pets-page .navlink:hover {
+  color: var(--font-colornavlink_dark_active);
+}

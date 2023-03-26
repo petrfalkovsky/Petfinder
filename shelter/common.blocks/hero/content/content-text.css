@@ -1,0 +1,12 @@
+#hero h1 {
+  color: var(--colorhero-sectionh1);
+  max-width: 20rem;
+  padding-bottom: 3.125rem;
+  letter-spacing: normal;
+}
+
+.herocontent-conainer p {
+  color: var(--colorhero-sectionp);
+  max-width: 28.8rem;
+  padding-bottom: 2.875rem;
+}

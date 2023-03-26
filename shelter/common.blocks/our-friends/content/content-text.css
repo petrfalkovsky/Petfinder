@@ -1,0 +1,9 @@
+#our-friends h2 {
+  color: var(--colorsectionsh2);
+  max-width: 25rem;
+  text-align: center;
+}
+
+#our-friends h3 {
+  color: var(--colorsectionsh2);
+}

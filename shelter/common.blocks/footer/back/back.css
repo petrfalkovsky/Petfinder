@@ -1,0 +1,4 @@
+.footerback {
+  background: var(--gradientfooter-background);
+  background-blend-mode: multiply;
+}
