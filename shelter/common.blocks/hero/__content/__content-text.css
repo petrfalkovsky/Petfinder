@@ -2,6 +2,7 @@
   color: var(--color__hero-section__h1);
   max-width: 20rem;
   padding-bottom: 3.125rem;
+  letter-spacing: normal;
 }
 
 .hero__content-conainer p {

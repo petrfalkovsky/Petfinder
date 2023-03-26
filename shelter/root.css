@@ -11,6 +11,7 @@
   --color__about-section__p: #545454;
   --color__help-section__p: #545454;
   --font-color__button: #292929;
+  --font-color__donat-section__p: #b2b2b2;
 
   /* Background Colors */
   --gradient__hero-background: radial-gradient(
@@ -30,6 +31,7 @@
   --font-size__h2: 2.18rem;
   --font-size__h3: 1.25rem;
   --font-size__p: 0.938rem;
+  --font-size__donat-section__p: 0.75rem;
 
   /* Line Heghts */
   --line-height__h1: 3.575rem;
@@ -37,6 +39,10 @@
   --line-height__p: 1.5rem;
   --line-height__button: 1.063rem;
   --line-height__p-115: 1.438rem;
+  --line-height__donat-section__p: 1.125rem;
+
+  /* Letter-spacing */
+  --letter-spacing_h: 0.06em;
 
   /* Font Weight */
   --font-weight__h: 400;

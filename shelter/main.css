@@ -27,13 +27,13 @@
 @import "common.blocks/our-friends/__slider-containers/__slider-inner-container.css";
 @import "common.blocks/card/card.css";
 @import "common.blocks/zoom/zoom.css";
-@import "help/help.css";
-@import "help/__content/__content-text.css";
-@import "help/__flex-container/__flex-container.css";
-@import "help/__flex-container/__flex-item.css";
-@import "";
-@import "";
-@import "";
+@import "common.blocks/help/help.css";
+@import "common.blocks/help/__content/__content-text.css";
+@import "common.blocks/help/__flex-container/__flex-container.css";
+@import "common.blocks/help/__flex-container/__flex-item.css";
+@import "common.blocks/donat/__container/__container.css";
+@import "common.blocks/donat/__content-tex/__content-text.css";
+@import "common.blocks/donat/__card-number/__card-number.css";
 @import "";
 @import "";
 @import "";
@@ -58,9 +58,11 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-family__h);
   font-weight: var(--font-weight__h);
+  letter-spacing: var(--letter-spacing_h);
   margin: 0;
 }
 
