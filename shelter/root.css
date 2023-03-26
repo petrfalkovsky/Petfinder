@@ -1,78 +1,78 @@
 :root {
   /* Colors */
-  --font-color__nav__link: #cdcdcd;
-  --font-color__nav__link_active: #fafafa;
-  --font-color__nav__link_dark: #545454;
-  --font-color__nav__link_active_dark: #292929;
-  --color__primary_dark: #f1cdb3;
-  --color__primary_light: #fddcc4;
-  --color__logo-description: #fff;
-  --color__hero-section__h1: #fff;
-  --color__sections__h2: #545454;
-  --color__hero-section__p: #cdcdcd;
-  --color__about-section__p: #545454;
-  --color__help-section__p: #545454;
-  --font-color__button: #292929;
-  --font-color__donat-section__p: #b2b2b2;
-  --font-color__footer__h: #fff;
+  --font-colornavlink: #cdcdcd;
+  --font-colornavlink_active: #fafafa;
+  --font-colornavlink_dark: #545454;
+  --font-colornavlink_active_dark: #292929;
+  --colorprimary_dark: #f1cdb3;
+  --colorprimary_light: #fddcc4;
+  --colorlogo-description: #fff;
+  --colorhero-sectionh1: #fff;
+  --colorsectionsh2: #545454;
+  --colorhero-sectionp: #cdcdcd;
+  --colorabout-sectionp: #545454;
+  --colorhelp-sectionp: #545454;
+  --font-colorbutton: #292929;
+  --font-colordonat-sectionp: #b2b2b2;
+  --font-colorfooterh: #fff;
   --color-element_disabled: #cdcdcd;
 
   /* Background Colors */
-  --gradient__hero-background: radial-gradient(
+  --gradienthero-background: radial-gradient(
     100% 215.42% at 0% 0%,
     #5b483a 0%,
     #262425 100%
   );
-  --gradient__footer-background: radial-gradient(
+  --gradientfooter-background: radial-gradient(
     110.67% 538.64% at 5.73% 50%,
     #513d2f 0%,
     #1a1a1c 100%
   );
-  --color__white-background: #ffffff;
-  --color__white-darker-background: #f6f6f6;
-  --color__card-background: #fafafa;
+  --colorwhite-background: #ffffff;
+  --colorwhite-darker-background: #f6f6f6;
+  --colorcard-background: #fafafa;
 
   /* Sizes */
-  --font-size__nav__link: 0.938rem;
-  --font-size__logo-title: 2rem;
-  --font-size__logo-description: 0.813rem;
-  --font-size__h1: 2.75rem;
-  --font-size__h2: 2.18rem;
-  --font-size__h3: 1.25rem;
-  --font-size__p: 0.938rem;
-  --font-size__donat-section__p: 0.75rem;
+  --font-sizenavlink: 0.938rem;
+  --font-sizelogo-title: 2rem;
+  --font-sizelogo-description: 0.813rem;
+  --font-sizeh1: 2.75rem;
+  --font-sizeh2: 2.18rem;
+  --font-sizeh3: 1.25rem;
+  --font-sizep: 0.938rem;
+  --font-sizedonat-sectionp: 0.75rem;
 
   /* Line Heghts */
-  --line-height__h1: 3.575rem;
-  --line-height__h2: 2.813rem;
-  --line-height__p: 1.5rem;
-  --line-height__button: 1.063rem;
-  --line-height__p-115: 1.438rem;
-  --line-height__donat-section__p: 1.125rem;
+  --line-heighth1: 3.575rem;
+  --line-heighth2: 2.813rem;
+  --line-heightp: 1.5rem;
+  --line-heightbutton: 1.063rem;
+  --line-heightp-115: 1.438rem;
+  --line-heightdonat-sectionp: 1.125rem;
 
   /* Letter-spacing */
   --letter-spacing_h: 0.06em;
 
   /* Font Weight */
-  --font-weight__h: 400;
-  --font-weight__p: 400;
-  --font-weight__button: 400;
+  --font-weighth: 400;
+  --font-weightp: 400;
+  --font-weightbutton: 400;
 
   /* Font-family:  */
-  --font-family__h: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familyh: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__p: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familyp: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__logo-title: Georgia, system-ui, -apple-system, "Segoe UI",
+  --font-familylogo-title: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-familylogo-description: Arial, system-ui, -apple-system, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__logo-description: Arial, system-ui, -apple-system, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__nav__link: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familynavlink: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__button: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familybutton: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__georgia: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familygeorgia: Georgia, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-  --font-family__arial: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
+  --font-familyarial: Arial, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }

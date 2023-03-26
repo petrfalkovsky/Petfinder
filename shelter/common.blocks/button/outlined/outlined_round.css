@@ -1,0 +1,8 @@
+#our-friends .sliderbutton .buttonoutlined.width {
+  width: 3.25rem;
+}
+
+.buttonoutlined img {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,15 @@
+.navlogo-description {
+  color: var(--colorlogo-description);
+  font-size: var(--font-sizelogo-description);
+  font-family: var(--font-familylogo-description);
+  letter-spacing: 0.1em;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+  margin: 0;
+}
+
+#pets-page .navlogo-description {
+  color: var(--colorsectionsh2);
+}

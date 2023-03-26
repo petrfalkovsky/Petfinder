@@ -1,0 +1,14 @@
+.our-friendsslider-inner-container {
+  max-width: 61.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.625rem;
+}
+
+#pets-page .our-friendsslider-inner-container {
+  max-width: 75rem;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}

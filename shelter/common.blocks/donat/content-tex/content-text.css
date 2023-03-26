@@ -1,0 +1,20 @@
+#donat h2 {
+  max-width: 20rem;
+}
+
+#donat h2,
+h3,
+h4 {
+  color: var(--colorsectionsh2);
+}
+
+#donat h3 {
+  font-size: var(--font-sizep);
+}
+
+#donat p {
+  color: var(--font-colordonat-sectionp);
+  font-style: italic;
+  font-size: var(--font-sizedonat-sectionp);
+  line-height: var(--line-heightdonat-sectionp);
+}

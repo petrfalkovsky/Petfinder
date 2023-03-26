@@ -1,0 +1,22 @@
+.navlink_active {
+  cursor: default;
+  color: var(--font-colornavlink_active);
+  font-size: var(--font-sizenavlink);
+  font-family: var(--font-familynavlink);
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.navlink_active-border {
+  margin-top: 0.313rem;
+  height: 0.188rem;
+  align-self: stretch;
+  background-color: var(--colorprimary_dark);
+}
+
+#pets-page .navlink_active {
+  color: var(--font-colornavlink_dark_active);
+  font-weight: 600;
+}

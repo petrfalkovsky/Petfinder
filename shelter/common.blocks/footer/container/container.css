@@ -1,0 +1,7 @@
+.footercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 160px;
+  padding-top: 40px;
+}

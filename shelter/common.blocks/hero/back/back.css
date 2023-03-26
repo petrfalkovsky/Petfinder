@@ -1,0 +1,4 @@
+.heroback {
+  background: var(--gradienthero-background);
+  background-blend-mode: multiply;
+}
