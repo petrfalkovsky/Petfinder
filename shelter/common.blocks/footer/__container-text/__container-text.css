@@ -1,0 +1,10 @@
+.footer__container .footer__container-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 160px;
+}
+
+.footer__container-text h2 {
+  color: var(--font-color__footer__h);
+}

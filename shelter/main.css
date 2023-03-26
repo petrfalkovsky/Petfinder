@@ -11,6 +11,7 @@
 @import "common.blocks/hero/__back/__back.css";
 @import "common.blocks/hero/__content/__content-text.css";
 @import "common.blocks/hero/__content/__content-img.css";
+@import "common.blocks/hero/hero.css";
 @import "common.blocks/button/button.css";
 @import "common.blocks/button/__elevated/__elevated.css";
 @import "common.blocks/button/__outlined/__outlined.css";
@@ -34,7 +35,12 @@
 @import "common.blocks/donat/__container/__container.css";
 @import "common.blocks/donat/__content-tex/__content-text.css";
 @import "common.blocks/donat/__card-number/__card-number.css";
-@import "";
+@import "common.blocks/footer/__back/__back.css";
+@import "common.blocks/footer/__container/__container.css";
+@import "common.blocks/footer/__container-text/__container-text.css";
+@import "common.blocks/footer/footer.css";
+@import "common.blocks/footer/__link/__link.css";
+@import "common.blocks/footer/__container-column/__container-column.css";
 @import "";
 @import "";
 

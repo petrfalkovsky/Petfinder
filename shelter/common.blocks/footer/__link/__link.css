@@ -1,0 +1,15 @@
+.footer__link {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1.25rem;
+  flex-direction: row;
+  min-width: 302px;
+
+  color: var(--color__primary_dark);
+  font-family: var(--font-family__georgia);
+  font-size: var(--font-size__h3);
+  line-height: var(--line-height__p-115);
+  letter-spacing: var(--letter-spacing_h);
+  text-decoration: none;
+}
