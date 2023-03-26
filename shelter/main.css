@@ -40,8 +40,8 @@
 @import "common.blocks/footer/footer.css";
 @import "common.blocks/footer/__link/__link.css";
 @import "common.blocks/footer/__container-column/__container-column.css";
-@import "";
-@import "";
+@import "common.blocks/button/__outlined/__disabled.css";
+@import "common.blocks/our-friends/__pagination-container/__pagination-container.css";
 
 @font-face {
   font-family: "Arial";

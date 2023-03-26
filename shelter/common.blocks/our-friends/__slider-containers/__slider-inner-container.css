@@ -6,3 +6,9 @@
   align-items: center;
   gap: 5.625rem;
 }
+
+#pets-page .our-friends__slider-inner-container {
+  max-width: 75rem;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}

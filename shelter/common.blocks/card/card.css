@@ -12,5 +12,15 @@
 .card:hover {
   cursor: pointer;
   background: var(--color__white-darker-background);
-  box-shadow: 0px 0px 30px 0px #dffcfc;
+  box-shadow: 0 0 1.875rem 0 #dffcfc;
+}
+
+#pets-page .card {
+  width: 15rem;
+}
+
+#pets-page .card:hover {
+  cursor: pointer;
+  background: var(--color__white-darker-background);
+  box-shadow: 0 0 1.875rem 0 #dffcfc;
 }

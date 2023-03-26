@@ -15,6 +15,7 @@
   --font-color__button: #292929;
   --font-color__donat-section__p: #b2b2b2;
   --font-color__footer__h: #fff;
+  --color-element_disabled: #cdcdcd;
 
   /* Background Colors */
   --gradient__hero-background: radial-gradient(
