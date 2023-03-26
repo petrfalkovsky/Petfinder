@@ -1,0 +1,108 @@
+@import "root.css";
+@import "common.blocks/nav/nav.css";
+@import "common.blocks/nav/__item/__item.css";
+@import "common.blocks/nav/__link/__link.css";
+@import "common.blocks/nav/__link/__link_active.css";
+@import "common.blocks/nav/__list/__list.css";
+@import "common.blocks/nav/__logo/__logo.css";
+@import "common.blocks/nav/__logo-text/__logo-title.css";
+@import "common.blocks/nav/__logo-text/__logo-description.css";
+@import "common.blocks/hero/__back/__back.css";
+@import "common.blocks/hero/__content/__content-text.css";
+@import "common.blocks/hero/__content/__content-img.css";
+@import "common.blocks/hero/hero.css";
+@import "common.blocks/button/button.css";
+@import "common.blocks/button/__elevated/__elevated.css";
+@import "common.blocks/button/__outlined/__outlined.css";
+@import "common.blocks/button/__outlined/__outlined_round.css";
+@import "common.blocks/hero/__content/__content-container.css";
+@import "common.blocks/hero/__container/__container.css";
+@import "common.blocks/about/__back/__back.css";
+@import "common.blocks/about/__container/__container.css";
+@import "common.blocks/about/__content/__content-text.css";
+@import "common.blocks/our-friends/__container/__container.css";
+@import "common.blocks/our-friends/__back/__back.css";
+@import "common.blocks/our-friends/__content/__content-text.css";
+@import "common.blocks/our-friends/__slider-containers/__slider-container.css";
+@import "common.blocks/our-friends/__slider-containers/__slider-inner-container.css";
+@import "common.blocks/card/card.css";
+@import "common.blocks/zoom/zoom.css";
+@import "common.blocks/help/help.css";
+@import "common.blocks/help/__content/__content-text.css";
+@import "common.blocks/help/__flex-container/__flex-container.css";
+@import "common.blocks/help/__flex-container/__flex-item.css";
+@import "common.blocks/donat/__container/__container.css";
+@import "common.blocks/donat/__content-tex/__content-text.css";
+@import "common.blocks/donat/__card-number/__card-number.css";
+@import "common.blocks/footer/__back/__back.css";
+@import "common.blocks/footer/__container/__container.css";
+@import "common.blocks/footer/__container-text/__container-text.css";
+@import "common.blocks/footer/footer.css";
+@import "common.blocks/footer/__link/__link.css";
+@import "common.blocks/footer/__container-column/__container-column.css";
+@import "common.blocks/button/__outlined/__disabled.css";
+@import "common.blocks/our-friends/__pagination-container/__pagination-container.css";
+
+@font-face {
+  font-family: "Arial";
+  src: url("assets/fonts/arial/arial-regular.ttf");
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("assets/fonts/georgia/georgia-regular.ttf");
+}
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family__h);
+  font-weight: var(--font-weight__h);
+  letter-spacing: var(--letter-spacing_h);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size__h1);
+  line-height: var(--line-height__h1);
+}
+
+h2 {
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__h2);
+}
+
+h3 {
+  font-size: var(--font-size__h3);
+}
+
+p {
+  font-family: var(--font-family__p);
+  font-weight: var(--font-weight__p);
+  font-size: var(--font-size__p);
+  line-height: var(--line-height__p);
+  margin: 0;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+a {
+  text-decoration: none;
+}

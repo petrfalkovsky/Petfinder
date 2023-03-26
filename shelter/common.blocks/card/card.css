@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color__card-background);
+  justify-content: space-between;
+  border-radius: 0.563rem;
+  width: 16.875rem;
+  height: 27.188rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: var(--color__white-darker-background);
+  box-shadow: 0 0 1.875rem 0 #dffcfc;
+}
+
+#pets-page .card {
+  width: 15rem;
+}
+
+#pets-page .card:hover {
+  cursor: pointer;
+  background: var(--color__white-darker-background);
+  box-shadow: 0 0 1.875rem 0 #dffcfc;
+}

@@ -1,0 +1,16 @@
+#about h2 {
+  color: var(--color__sections__h2);
+  line-height: var(--line-height__h2);
+}
+
+#about p {
+  color: var(--color__about-section__p);
+  font-family: var(--font-family__p);
+}
+
+#about article {
+  display: flex;
+  max-width: 26.875rem;
+  flex-direction: column;
+  gap: 1.625rem;
+}

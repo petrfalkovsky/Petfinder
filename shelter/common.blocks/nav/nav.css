@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  padding-top: 1.875rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1.875rem;
+  padding-left: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.nav__back {
+  background-color: var(--color__white-background);
+}

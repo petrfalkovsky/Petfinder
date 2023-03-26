@@ -1,0 +1,17 @@
+.nav__logo-title {
+  font-size: var(--font-size__logo-title);
+  color: var(--color__primary_dark);
+  font-family: var(--font-family__logo-title);
+  line-height: 110%;
+  letter-spacing: var(--letter-spacing_h);
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+  padding-bottom: 0.313rem;
+  margin: 0;
+}
+
+#pets-page .nav__logo-title {
+  color: var(--color__sections__h2);
+}
