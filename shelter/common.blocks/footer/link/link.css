@@ -13,3 +13,7 @@
   letter-spacing: var(--letter-spacing_h);
   text-decoration: none;
 }
+
+.footerlink:hover {
+  color: var(--colorprimary_light);
+}
