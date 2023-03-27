@@ -11,3 +11,7 @@
   padding-top: 0.313rem;
   padding-bottom: 0.313rem;
 }
+
+.donatcard-number h4:hover {
+  color: var(--font-colornavlink_active_dark);
+}
