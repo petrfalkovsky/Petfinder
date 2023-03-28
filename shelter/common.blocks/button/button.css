@@ -6,4 +6,5 @@ button {
   color: var(--font-colorbutton);
   border-radius: 7rem;
   height: 3.25rem;
+  letter-spacing: var(--letter-spacing_h);
 }

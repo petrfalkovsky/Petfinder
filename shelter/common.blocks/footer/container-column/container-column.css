@@ -1,11 +1,13 @@
 #contact.footercontainer-column {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.438rem;
+  padding-top: 1rem;
 }
 
 #locate.footercontainer-column {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2.063rem;
+  padding-top: 1rem;
 }

@@ -4,7 +4,7 @@
   text-align: left;
   gap: 1.25rem;
   flex-direction: row;
-  min-width: 302px;
+  min-width: 18.875rem;
 
   color: var(--colorprimary_dark);
   font-family: var(--font-familygeorgia);
