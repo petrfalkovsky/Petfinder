@@ -11,4 +11,5 @@
 .buttonoutlined_disabled-elevated {
   pointer-events: none;
   background-color: var(--colorprimary_dark);
+  border: 2px solid var(--colorprimary_dark);
 }

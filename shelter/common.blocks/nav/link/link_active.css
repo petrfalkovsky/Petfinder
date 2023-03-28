@@ -18,5 +18,4 @@
 
 #pets-page .navlink_active {
   color: var(--font-colornavlink_dark_active);
-  font-weight: 600;
 }
