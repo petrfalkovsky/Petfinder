@@ -1,10 +1,11 @@
 .helpflex-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1.875rem;
-  min-width: 10.5rem;
+  min-width: 4.6rem;
+  padding: 0 1.625rem;
 }
 
 #help img {

@@ -5,5 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   align-content: space-between;
-  gap: 3.438rem;
+  gap: 4.063rem;
+  max-width: 75.375rem;
+  row-gap: 3.438rem;
 }

@@ -6,3 +6,10 @@
   display: block;
   margin: auto;
 }
+
+.sliderbutton {
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  padding-bottom: 6.3rem;
+}
