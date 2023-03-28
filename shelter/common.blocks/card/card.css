@@ -6,11 +6,15 @@
   border-radius: 0.563rem;
   width: 16.875rem;
   height: 27.188rem;
-  gap: 2rem;
+  gap: 1.9rem;
 }
 
-.card h3 {
+#main-page .card h3 {
+}
+
+#pets-page .card h3 {
   padding-top: 1rem;
+  gap: 2rem;
 }
 
 .card:hover {
