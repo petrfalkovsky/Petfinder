@@ -29,3 +29,7 @@
   background: var(--colorwhite-darker-background);
   box-shadow: 0 0 1.875rem 0 #dffcfc;
 }
+
+.zoom:hover .buttonoutlined {
+  background: var(--colorprimary_dark);
+}
