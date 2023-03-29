@@ -1,6 +1,7 @@
 .navlink {
   color: var(--font-colornavlink);
   text-decoration: none;
+  font-family: var(--font-familyarial);
 }
 
 .navlink:hover {
