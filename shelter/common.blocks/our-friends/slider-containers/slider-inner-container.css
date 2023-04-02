@@ -1,4 +1,4 @@
-.our-friendsslider-inner-container {
+.our-friends__slider-inner-container {
   max-width: 61.875rem;
   display: flex;
   flex-direction: row;
@@ -7,7 +7,7 @@
   gap: 5.625rem;
 }
 
-#pets-page .our-friendsslider-inner-container {
+#pets-page .our-friends__slider-inner-container {
   max-width: 73rem;
   flex-wrap: wrap;
   gap: 1.875rem;

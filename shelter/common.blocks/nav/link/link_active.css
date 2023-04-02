@@ -1,21 +1,21 @@
-.navlink_active {
+.nav__link_active {
   cursor: default;
-  color: var(--font-colornavlink_active);
-  font-size: var(--font-sizenavlink);
-  font-family: var(--font-familynavlink);
+  color: var(--font-colornav__link_active);
+  font-size: var(--font-sizenav__link);
+  font-family: var(--font-familynav__link);
   width: min-content;
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
 }
 
-.navlink_active-border {
+.nav__link_active-border {
   margin-top: 0.313rem;
   height: 0.188rem;
   align-self: stretch;
   background-color: var(--colorprimary_dark);
 }
 
-#pets-page .navlink_active {
-  color: var(--font-colornavlink_dark_active);
+#pets-page .nav__link_active {
+  color: var(--font-colornav__link_dark_active);
 }

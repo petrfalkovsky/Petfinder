@@ -1,4 +1,4 @@
-.navlist {
+.nav__list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
