@@ -1,0 +1,17 @@
+@media (max-width: 1279.9px) {
+  .footer__container {
+    flex-direction: column;
+    max-width: 50rem;
+    padding-top: 1rem;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  #footer .footer__container {
+    max-width: 40rem;
+  }
+
+  .footer__container img {
+    max-width: 20rem;
+  }
+}

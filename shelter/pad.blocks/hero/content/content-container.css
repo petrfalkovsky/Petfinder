@@ -1,0 +1,10 @@
+@media (max-width: 1279.9px) {
+  .hero__content-conainer {
+    margin: 0;
+  }
+
+  .hero__container img {
+    width: 35.3rem;
+    margin-top: 6.5em;
+  }
+}
