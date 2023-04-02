@@ -30,6 +30,6 @@
   box-shadow: 0 0 1.875rem 0 #dffcfc;
 }
 
-.zoom:hover .buttonoutlined {
+.zoom:hover .button__outlined {
   background: var(--colorprimary_dark);
 }

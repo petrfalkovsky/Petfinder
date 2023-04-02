@@ -1,4 +1,4 @@
-.navlogo-title {
+.nav__logo-title {
   font-size: var(--font-sizelogo-title);
   color: var(--colorprimary_dark);
   font-family: var(--font-familylogo-title);
@@ -12,6 +12,6 @@
   margin: 0;
 }
 
-#pets-page .navlogo-title {
+#pets-page .nav__logo-title {
   color: var(--colorsectionsh2);
 }

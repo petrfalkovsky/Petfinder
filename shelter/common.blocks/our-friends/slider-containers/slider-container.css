@@ -1,4 +1,4 @@
-.our-friendsslider-container {
+.our-friends__slider-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,11 +6,11 @@
   gap: 3.313rem;
 }
 
-#main-page .our-friendsslider-container {
+#main-page .our-friends__slider-container {
   max-width: 75rem;
   gap: 3.313rem;
 }
 
-#pets-page .our-friendsslider-container {
+#pets-page .our-friends__slider-container {
   gap: 3.313rem;
 }

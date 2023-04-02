@@ -1,18 +1,18 @@
-.navlink {
-  color: var(--font-colornavlink);
+.nav__link {
+  color: var(--font-colornav__link);
   text-decoration: none;
   font-family: var(--font-familyarial);
 }
 
-.navlink:hover {
-  color: var(--font-colornavlink_active);
+.nav__link:hover {
+  color: var(--font-colornav__link_active);
 }
 
-#pets-page .navlink {
-  color: var(--font-colornavlink_dark);
+#pets-page .nav__link {
+  color: var(--font-colornav__link_dark);
   font-family: var(--font-familyarial);
 }
 
-#pets-page .navlink:hover {
-  color: var(--font-colornavlink_dark_active);
+#pets-page .nav__link:hover {
+  color: var(--font-colornav__link_dark_active);
 }
