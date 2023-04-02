@@ -1,13 +1,13 @@
-#our-friends .sliderbutton .buttonoutlined.width {
+#our-friends .slider__button .button__outlined.width {
   width: 3.25rem;
 }
 
-.buttonoutlined img {
+.button__outlined img {
   display: block;
   margin: auto;
 }
 
-#pets-page .sliderbutton {
+#pets-page .slider__button {
   display: flex;
   justify-content: center;
   align-self: start;

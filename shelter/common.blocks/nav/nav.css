@@ -14,6 +14,6 @@
   margin: 0 auto;
 }
 
-.navback {
+.nav__back {
   background-color: var(--colorwhite-background);
 }

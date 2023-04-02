@@ -1,4 +1,4 @@
-.navlogo-description {
+.nav__logo-description {
   color: var(--colorlogo-description);
   font-size: var(--font-sizelogo-description);
   font-family: var(--font-familylogo-description);
@@ -10,6 +10,6 @@
   margin: 0;
 }
 
-#pets-page .navlogo-description {
+#pets-page .nav__logo-description {
   color: var(--colorsectionsh2);
 }

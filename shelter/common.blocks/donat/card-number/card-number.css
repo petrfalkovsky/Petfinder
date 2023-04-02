@@ -1,4 +1,4 @@
-.donatcard-number {
+.donat__card-number {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,6 +12,6 @@
   padding-bottom: 0.313rem;
 }
 
-.donatcard-number h4:hover {
-  color: var(--font-colornavlink_active_dark);
+.donat__card-number h4:hover {
+  color: var(--font-colornav__link_active_dark);
 }

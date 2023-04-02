@@ -1,4 +1,4 @@
-.footerlink {
+.footer__link {
   display: flex;
   align-items: center;
   text-align: left;
@@ -14,6 +14,6 @@
   text-decoration: none;
 }
 
-.footerlink:hover {
+.footer__link:hover {
   color: var(--colorprimary_light);
 }
