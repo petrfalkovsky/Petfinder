@@ -51,8 +51,8 @@
 @import "pad.blocks/slider-containers/slider-inner-container.css";
 @import "pad.blocks/our-page/container/container.css";
 @import "pad.blocks/card/card.css";
-@import "";
-@import "";
+@import "pad.blocks/flex-container/flex-container.css";
+@import "pad.blocks/flex-container/flex-item.css";
 @import "";
 @import "";
 @import "";

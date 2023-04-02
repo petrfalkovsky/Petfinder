@@ -1,7 +1,4 @@
 @media (max-width: 1279.9px) {
-  .our-friends__slider-container {
-  }
-
   #main-page .our-friends__slider-container {
     gap: 0.75rem;
   }

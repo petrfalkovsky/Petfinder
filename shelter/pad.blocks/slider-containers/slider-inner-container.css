@@ -6,12 +6,6 @@
     width: 580px;
   }
 
-  #pets-page .our-friends__slider-inner-container {
-    max-width: 73rem;
-    flex-wrap: wrap;
-    gap: 1.875rem;
-  }
-
   .display__pad {
     display: none;
   }
