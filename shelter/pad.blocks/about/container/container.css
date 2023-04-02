@@ -1,7 +1,7 @@
 @media (max-width: 1279.9px) {
   .about__container {
     flex-direction: column-reverse;
-    gap: 5.3rem;
+    gap: 4.9rem;
     padding-top: 5.1rem;
   }
 }

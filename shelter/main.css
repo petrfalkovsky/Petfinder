@@ -47,10 +47,10 @@
 @import "pad.blocks/button/elevated/elevated.css";
 @import "pad.blocks/hero/image-container/image-container.css";
 @import "pad.blocks/about/container/container.css";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "pad.blocks/slider-containers/slider-container.css";
+@import "pad.blocks/slider-containers/slider-inner-container.css";
+@import "pad.blocks/our-page/container/container.css";
+@import "pad.blocks/card/card.css";
 @import "";
 @import "";
 @import "";
