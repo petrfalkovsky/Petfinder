@@ -1,0 +1,6 @@
+@media (max-width: 1279.9px) {
+  .donat__container {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+  }
+}
