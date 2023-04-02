@@ -42,10 +42,10 @@
 @import "common.blocks/button/outlined/disabled.css";
 @import "common.blocks/our-friends/pagination-container/pagination-container.css";
 @import "pad.blocks/hero/container/container.css";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "pad.blocks/hero/content/content-container.css";
+@import "pad.blocks/nav/nav.css";
+@import "pad.blocks/button/elevated/elevated.css";
+@import "pad.blocks/hero/image-container/image-container.css";
 @import "";
 @import "";
 @import "";
