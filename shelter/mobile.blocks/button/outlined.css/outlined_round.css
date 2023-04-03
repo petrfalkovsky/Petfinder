@@ -8,4 +8,8 @@
   .display__mobile_hide {
     display: none;
   }
+
+  #pets-page .slider__button {
+    padding-bottom: 2.7rem;
+  }
 }

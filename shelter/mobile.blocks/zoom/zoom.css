@@ -2,4 +2,8 @@
   .zoom img {
     width: 96%;
   }
+
+  #pets-page .zoom img {
+    width: 106%;
+  }
 }

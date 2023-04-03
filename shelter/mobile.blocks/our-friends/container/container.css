@@ -7,6 +7,14 @@
     padding-bottom: 2.6rem;
   }
 
+  #pets-page .our-friends__container {
+    padding-top: 2.5rem;
+    gap: 2.9rem;
+    text-align: center;
+    align-items: normal;
+    padding-bottom: 2rem;
+  }
+
   .display__mobile {
     display: none;
   }
