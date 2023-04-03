@@ -1,0 +1,6 @@
+@media (max-width: 767.9px) {
+  #hero .button__elevated.width {
+    margin: 0;
+    margin-top: 2px;
+  }
+}

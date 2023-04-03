@@ -1,9 +1,9 @@
 @media (max-width: 1279.9px) {
   .our-friends__slider-inner-container {
-    max-width: 580px;
+    max-width: 36.25rem;
     gap: 2.2rem;
     overflow: hidden;
-    width: 580px;
+    width: 36.25rem;
   }
 
   #main-page .display__pad {
@@ -17,6 +17,6 @@
   #pets-page .our-friends__slider-inner-container {
     row-gap: 1.975rem;
     column-gap: 4rem;
-    width: 551px;
+    width: 34.438rem;
   }
 }
