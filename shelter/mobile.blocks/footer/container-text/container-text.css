@@ -17,4 +17,8 @@
   .footer__container img {
     max-width: 16rem;
   }
+
+  #pets-page .footer__container img {
+    max-width: 16.35rem;
+  }
 }
