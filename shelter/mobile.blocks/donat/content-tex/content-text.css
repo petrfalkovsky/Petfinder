@@ -1,0 +1,27 @@
+@media (max-width: 767.9px) {
+  #donat h2 {
+    max-width: 15rem;
+    line-height: 1.969rem;
+    font-size: 1.563rem;
+    margin: 0 auto;
+    letter-spacing: 1.6px;
+  }
+
+  #donat h3 {
+    letter-spacing: 0px;
+  }
+
+  #donat h4 {
+    letter-spacing: 0.9px;
+  }
+
+  #donat p {
+    max-width: 18rem;
+    text-align: justify;
+    line-height: 18px;
+  }
+
+  #donat img {
+    max-width: 17rem;
+  }
+}

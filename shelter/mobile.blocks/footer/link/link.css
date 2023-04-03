@@ -1,0 +1,6 @@
+@media (max-width: 767.9px) {
+  #contact .footer__link {
+    align-self: center;
+    min-width: 10rem;
+  }
+}

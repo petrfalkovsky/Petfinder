@@ -2,4 +2,9 @@
   #main-page .our-friends__container {
     padding-top: 5.1rem;
   }
+
+  #pets-page .our-friends__container {
+    gap: 2.9rem;
+    padding-bottom: 1rem;
+  }
 }

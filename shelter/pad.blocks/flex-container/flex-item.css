@@ -1,7 +1,7 @@
 @media (max-width: 1279.9px) {
   .help__flex-item {
-    width: 170px;
-    height: 113px;
+    width: 10.625rem;
+    height: 7.063rem;
     row-gap: 1.875rem;
   }
 }

@@ -22,6 +22,9 @@
     content="Petfinder has helped more than 25 million pets find their families through adoption. Search our extensive list of dogs, cats and other pets available for adoption and rescue near you.">
   <!-- Styles -->
   <link rel="stylesheet" href="main.css">
+  <!-- Scripts -->
+  <script src="index.js" defer></script>
+  <script src="mobile.blocks\nav\burger.js" defer></script>
 </head>
 
 <body id="main-page">
@@ -37,6 +40,10 @@
               <p class="nav__logo-description">Shelter for pets in Almaty</p>
             </div>
           </a>
+          <div class="nav__burger-container">
+            <div class="nav__burger active "></div>
+          </div>
+
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link nav__link_active">
@@ -110,7 +117,7 @@
         </h2>
 
         <div class="our-friends__slider-container">
-          <div class="slider__button">
+          <div class="slider__button display__mobile_hide">
             <button class="button__outlined width rotate-180">
               <img src="assets/icons/arrow.png" alt="left arrow slider">
             </button>
@@ -128,7 +135,7 @@
               </div>
               <div class="card-bottom-element"></div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom display__mobile">
               <img src="assets/images/pets-h270/jennifer.png" alt="puppy Jennifer" class="cardimg">
               <h3>Jennifer</h3>
               <div class="cardbutton">
@@ -149,11 +156,17 @@
               <div class="card-bottom-element"></div>
             </div>
           </div>
-
-          <div class="slider__button">
-            <button class="button__outlined width">
-              <img src="assets/icons/arrow.png" alt="right arrow slider">
-            </button>
+          <div class="buttons__slider-container">
+            <div class="slider__button display__mobile_show">
+              <button class="button__outlined width rotate-180">
+                <img src="assets/icons/arrow.png" alt="left arrow slider">
+              </button>
+            </div>
+            <div class="slider__button">
+              <button class="button__outlined width">
+                <img src="assets/icons/arrow.png" alt="right arrow slider">
+              </button>
+            </div>
           </div>
         </div>
 
@@ -268,8 +281,6 @@
       <img src="assets/images/footer-puppy.png" alt="the puppy lies and looks at you">
     </div>
   </div>
-  <!-- Scripts -->
-  <script src="index.js"></script>
 </body>
 
 </html>

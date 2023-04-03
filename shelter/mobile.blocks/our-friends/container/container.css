@@ -1,0 +1,18 @@
+@media (max-width: 767.9px) {
+  #main-page .our-friends__container {
+    padding-top: 2.6rem;
+    gap: 1.75rem;
+    text-align: center;
+    align-items: normal;
+    padding-bottom: 2.6rem;
+  }
+
+  .display__mobile {
+    display: none;
+  }
+
+  #main-page .our-friends__slider-container {
+    flex-direction: column;
+    padding-bottom: 0.938rem;
+  }
+}

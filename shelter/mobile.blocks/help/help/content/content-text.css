@@ -1,0 +1,17 @@
+@media (max-width: 767.9px) {
+  #help h2 {
+    max-width: 15rem;
+    line-height: 1.97rem;
+    font-size: 1.563rem;
+    margin: 0 auto;
+    letter-spacing: 0.088rem;
+  }
+
+  #help p {
+    max-width: 15rem;
+    line-height: 1.031rem;
+    font-size: 0.938rem;
+    margin: 0 auto;
+    letter-spacing: 0.6px;
+  }
+}

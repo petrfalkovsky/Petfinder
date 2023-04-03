@@ -1,0 +1,13 @@
+#help h2 {
+  max-width: 20rem;
+  text-align: center;
+  color: var(--colorsectionsh2);
+}
+
+#help p {
+  font-family: var(--font-familygeorgia);
+  font-size: var(--font-sizeh3);
+  line-height: var(--line-heightp-115);
+  letter-spacing: var(--letter-spacing_h);
+  color: var(--colorhelp-sectionp);
+}

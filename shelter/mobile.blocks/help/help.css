@@ -1,0 +1,9 @@
+@media (max-width: 767.9px) {
+  #help.about__back {
+    padding-top: 2.75rem;
+    padding-bottom: 2.6rem;
+    gap: 2.6rem;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+  }
+}
