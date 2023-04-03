@@ -1,0 +1,15 @@
+@media (max-width: 767.9px) {
+  .help__flex-item {
+    width: 8.125rem;
+    height: 5.438rem;
+    row-gap: 0.7rem;
+    padding: 0;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  #help img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}

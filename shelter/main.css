@@ -45,7 +45,6 @@
 @import "pad.blocks/hero/content/content-container.css";
 @import "pad.blocks/nav/nav.css";
 @import "pad.blocks/button/elevated/elevated.css";
-@import "pad.blocks/hero/image-container/image-container.css";
 @import "pad.blocks/about/container/container.css";
 @import "pad.blocks/slider-containers/slider-container.css";
 @import "pad.blocks/slider-containers/slider-inner-container.css";
@@ -70,10 +69,10 @@
 @import "mobile.blocks/zoom/zoom.css";
 @import "mobile.blocks/button/outlined.css/outlined_round.css";
 @import "mobile.blocks/our-friends/slider-containers/buttons__slider-container.css";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "mobile.blocks/help/help/content/content-text.css";
+@import "mobile.blocks/help/help.css";
+@import "mobile.blocks/help/flex-container/flex-item.css";
+@import "mobile.blocks/help/flex-container/flex-container.css";
 @import "";
 @import "";
 @import "";

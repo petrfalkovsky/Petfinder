@@ -1,8 +1,8 @@
 @media (max-width: 767.9px) {
   #about h2 {
     max-width: 15rem;
-    line-height: 31.5px;
-    font-size: 25px;
+    line-height: 1.969rem;
+    font-size: 1.563rem;
     margin: 0 auto;
     letter-spacing: 1.4px;
   }
@@ -10,7 +10,7 @@
   #about p {
     max-width: 17rem;
     text-align: justify;
-    line-height: 23.55px;
+    line-height: 1.472rem;
   }
 
   #about img {
