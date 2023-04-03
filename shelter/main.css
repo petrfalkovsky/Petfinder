@@ -76,6 +76,13 @@
 @import "mobile.blocks/donat/content-tex/content-text.css";
 @import "mobile.blocks/donat/container/container.css";
 @import "mobile.blocks/donat/card-number/card-number.css";
+@import "mobile.blocks/footer/container-text/container-text.css";
+@import "mobile.blocks/footer/container/container.css";
+@import "mobile.blocks/footer/link/link.css";
+@import "";
+@import "";
+@import "";
+@import "";
 @import "";
 @import "";
 

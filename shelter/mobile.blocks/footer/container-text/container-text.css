@@ -1,0 +1,20 @@
+@media (max-width: 767.9px) {
+  #footer h2 {
+    max-width: 15rem;
+    line-height: 1.969rem;
+    font-size: 1.563rem;
+    margin: 0 auto;
+    letter-spacing: 1.6px;
+  }
+
+  .footer__container .footer__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.75rem;
+  }
+
+  .footer__container img {
+    max-width: 16rem;
+  }
+}

@@ -1,0 +1,25 @@
+@media (max-width: 767.9px) {
+  .footer__container {
+    flex-direction: column;
+    max-width: 50rem;
+    padding-top: 0rem;
+    gap: 2.6rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  #contact.footer__column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.438rem;
+    padding-top: 1.9rem;
+  }
+
+  #locate.footer__column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 1rem;
+    width: 301px;
+  }
+}
