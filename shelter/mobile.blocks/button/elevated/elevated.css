@@ -3,4 +3,8 @@
     margin: 0;
     margin-top: 2px;
   }
+
+  #our-friends .button__elevated.width {
+    align-self: center;
+  }
 }
