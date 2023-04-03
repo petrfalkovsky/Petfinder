@@ -62,8 +62,8 @@
 @import "mobile.blocks/hero/content/content-text.css";
 @import "mobile.blocks/hero/content/content-container.css";
 @import "mobile.blocks/button/elevated/elevated.css";
-@import "";
-@import "";
+@import "mobile.blocks/about/content/content-text.css";
+@import "mobile.blocks/about/container/container.css";
 @import "";
 @import "";
 @import "";
