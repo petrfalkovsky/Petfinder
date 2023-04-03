@@ -14,3 +14,53 @@
   flex-direction: column;
   gap: 1.625rem;
 }
+
+@media (min-width: 769px) and (max-width: 1279px) {
+  #about article {
+    min-width: 90%;
+  }
+
+  .hero__content-conainer {
+    width: 90%;
+  }
+
+  #hero h1 {
+    max-width: 90%;
+  }
+
+  .hero__content-conainer p {
+    max-width: 90%;
+  }
+
+  #hero .button__elevated.width {
+    margin-left: 0rem !important;
+  }
+
+  .donat__container article {
+    max-width: 90% !important;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+  #hero h1 {
+    max-width: 90% !important;
+  }
+
+  .hero__content-conainer p {
+    max-width: 90% !important;
+  }
+
+  #about article {
+    max-width: 90% !important;
+  }
+
+  #about h2 {
+    max-width: 90% !important;
+  }
+
+  #about p {
+    max-width: 100% !important;
+  }
+}
