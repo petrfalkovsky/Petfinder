@@ -79,8 +79,8 @@
 @import "mobile.blocks/footer/container-text/container-text.css";
 @import "mobile.blocks/footer/container/container.css";
 @import "mobile.blocks/footer/link/link.css";
-@import "";
-@import "";
+@import "mobile.blocks/card/card.css";
+@import "mobile.blocks/our-friends/pagination-container/pagination-container.css";
 @import "";
 @import "";
 @import "";
