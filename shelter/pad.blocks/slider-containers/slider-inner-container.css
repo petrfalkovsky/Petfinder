@@ -6,7 +6,17 @@
     width: 580px;
   }
 
-  .display__pad {
+  #main-page .display__pad {
     display: none;
+  }
+
+  #pets-page .display__pad {
+    display: none;
+  }
+
+  #pets-page .our-friends__slider-inner-container {
+    row-gap: 1.975rem;
+    column-gap: 4rem;
+    width: 551px;
   }
 }

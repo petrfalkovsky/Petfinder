@@ -56,7 +56,7 @@
 @import "pad.blocks/donat/container/container.css";
 @import "pad.blocks/footer/container/container.css";
 @import "pad.blocks/footer/container-text/container-text.css";
-@import "";
+@import "pad.blocks/button/outlined.css/outlined_round.css";
 @import "";
 @import "";
 @import "";
