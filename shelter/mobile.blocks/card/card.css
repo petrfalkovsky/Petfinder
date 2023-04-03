@@ -3,6 +3,10 @@
     gap: 2.2rem;
   }
 
+  #main-page .card {
+    gap: 2rem;
+  }
+
   #pets-page .card h3 {
     padding-top: 0rem;
   }
