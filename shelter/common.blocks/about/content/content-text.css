@@ -41,6 +41,13 @@
     text-align: center;
     align-items: center;
   }
+  #pets-page .our-friends__slider-inner-container {
+    width: 90% !important;
+  }
+
+  #pets-page .our-friends__slider-container {
+    justify-content: center !important;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 767px) {
@@ -62,5 +69,13 @@
 
   #about p {
     max-width: 100% !important;
+  }
+
+  #pets-page .our-friends__slider-inner-container {
+    width: 90% !important;
+  }
+
+  #pets-page .our-friends__slider-container {
+    justify-content: center !important;
   }
 }
