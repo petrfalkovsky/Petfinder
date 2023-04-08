@@ -41,15 +41,26 @@ carousel.addEventListener("animationend", (animationEvent) => {
     document.querySelector("#item-active").innerHTML = itemRight.innerHTML;
   }
 
+  // генерирую уникальные числа
+  let numbers = [];
+
+  while (numbers.length < 3) {
+    const randomNumber = Math.floor(Math.random() * 8);
+    if (!numbers.includes(randomNumber)) {
+      numbers.push(randomNumber);
+    }
+  }
+
   // генерирую карточку
   const card1 = createCardElement();
-  card1.innerText = Math.floor(Math.random() * 8);
+  card1.innerText = numbers[0];
   // генерирую карточку
   const card2 = createCardElement();
-  card2.innerText = Math.floor(Math.random() * 8);
+  card2.innerText = numbers[1];
   // генерирую карточку
   const card3 = createCardElement();
-  card3.innerText = Math.floor(Math.random() * 8);
+  card3.innerText = numbers[2];
+
   //обнуляю удаляя
   changedCard.innerHTML = "";
   // добавляю внутрm еще элемент
