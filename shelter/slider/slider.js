@@ -28,48 +28,35 @@ btnLeft.addEventListener("click", moveLeft);
 btnRight.addEventListener("click", moveRight);
 
 carousel.addEventListener("animationend", (animationEvent) => {
+  let changedCard;
+
   if (animationEvent.animationName === "move-left") {
     carousel.classList.remove("transition-left");
-
+    changedCard = itemLeft;
     document.querySelector("#item-active").innerHTML = itemLeft.innerHTML;
-
-    // генерирую карточку
-    const card1 = createCardElement();
-    card1.innerText = Math.floor(Math.random() * 8);
-    // генерирую карточку
-    const card2 = createCardElement();
-    card2.innerText = Math.floor(Math.random() * 8);
-    // генерирую карточку
-    const card3 = createCardElement();
-    card3.innerText = Math.floor(Math.random() * 8);
-    //обнуляю удаляя
-    itemLeft.innerHTML = "";
-    // добавляю внутрm еще элемент
-    //todo не по очереди добавлять, а фором
-    itemLeft.appendChild(card1);
-    itemLeft.appendChild(card2);
-    itemLeft.appendChild(card3);
   } else {
     carousel.classList.remove("transition-right");
+    changedCard = itemRight;
+    carousel.classList.remove("transition-left");
     document.querySelector("#item-active").innerHTML = itemRight.innerHTML;
-
-    // генерирую карточку
-    const card1 = createCardElement();
-    card1.innerText = Math.floor(Math.random() * 8);
-    // генерирую карточку
-    const card2 = createCardElement();
-    card2.innerText = Math.floor(Math.random() * 8);
-    // генерирую карточку
-    const card3 = createCardElement();
-    card3.innerText = Math.floor(Math.random() * 8);
-    //обнуляю удаляя
-    itemRight.innerHTML = "";
-    // добавляю внутрm еще элемент
-    //todo не по очереди добавлять, а фором
-    itemRight.appendChild(card1);
-    itemRight.appendChild(card2);
-    itemRight.appendChild(card3);
   }
+
+  // генерирую карточку
+  const card1 = createCardElement();
+  card1.innerText = Math.floor(Math.random() * 8);
+  // генерирую карточку
+  const card2 = createCardElement();
+  card2.innerText = Math.floor(Math.random() * 8);
+  // генерирую карточку
+  const card3 = createCardElement();
+  card3.innerText = Math.floor(Math.random() * 8);
+  //обнуляю удаляя
+  changedCard.innerHTML = "";
+  // добавляю внутрm еще элемент
+  //todo не по очереди добавлять, а фором
+  changedCard.appendChild(card1);
+  changedCard.appendChild(card2);
+  changedCard.appendChild(card3);
 
   btnLeft.addEventListener("click", moveLeft);
   btnRight.addEventListener("click", moveRight);
