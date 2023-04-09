@@ -1,7 +1,7 @@
-const pets = [
+const petsList = [
   {
     name: "Jennifer",
-    img: "../../assets/images/jennifer.png",
+    img: "../assets/images/pets-h270/jennifer.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -13,7 +13,7 @@ const pets = [
   },
   {
     name: "Sophia",
-    img: "../../assets/images/sophia.png",
+    img: "../assets/images/pets-h270/sophia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
@@ -25,7 +25,7 @@ const pets = [
   },
   {
     name: "Woody",
-    img: "../../assets/images/woody.png",
+    img: "../assets/images/pets-h270/woody.png",
     type: "Dog",
     breed: "Golden Retriever",
     description:
@@ -37,7 +37,7 @@ const pets = [
   },
   {
     name: "Scarlett",
-    img: "../../assets/images/scarlett.png",
+    img: "../assets/images/pets-h270/scarlett.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
@@ -49,7 +49,7 @@ const pets = [
   },
   {
     name: "Katrine",
-    img: "../../assets/images/katrine.png",
+    img: "../assets/images/pets-h270/katrine.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -61,7 +61,7 @@ const pets = [
   },
   {
     name: "Timmy",
-    img: "../../assets/images/timmy.png",
+    img: "../assets/images/pets-h270/timmy.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -73,7 +73,7 @@ const pets = [
   },
   {
     name: "Freddie",
-    img: "../../assets/images/freddie.png",
+    img: "../assets/images/pets-h270/freddie.png",
     type: "Cat",
     breed: "British Shorthair",
     description:
@@ -85,7 +85,7 @@ const pets = [
   },
   {
     name: "Charly",
-    img: "../../assets/images/charly.png",
+    img: "../assets/images/pets-h270/charly.png",
     type: "Dog",
     breed: "Jack Russell Terrier",
     description:
