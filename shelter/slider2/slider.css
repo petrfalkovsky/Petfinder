@@ -49,15 +49,15 @@
 
 .carousel {
   position: relative;
-  left: -640px;
+  left: -940px;
 }
 
 @keyframes move-right {
   from {
-    left: -750px;
+    left: -940px;
   }
   to {
-    left: -1580px;
+    left: -1880px;
   }
 }
 

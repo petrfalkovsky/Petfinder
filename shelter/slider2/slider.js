@@ -159,54 +159,34 @@ carousel.addEventListener("animationend", (animationEvent) => {
   }
 
   // генерирую карточку
-  const card1 = createCardElement();
-  const card2 = createCardElement();
-  const card3 = createCardElement();
+  const card1 = createCard(petsList[numbers[0]]);
+  const card2 = createCard(petsList[numbers[1]]);
+  const card3 = createCard(petsList[numbers[2]]);
 
   // Заполняем каждую карточку одним животным
-  const animalCard1 = `
-  <img src="${petsList[numbers[0]].img}" alt="${
-    petsList[numbers[0]].name
-  }" class="cardimg">
-  <h3>${petsList[numbers[0]].name}</h3>
-  <div class="cardbutton">
-    <button name="learn_more" class="button button__outlined width">
-      Learn more
-    </button>
-  </div>
-`;
-  card1.innerHTML = animalCard1;
+  function createCard(pet) {
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card", "zoom");
 
-  const animalCard2 = `
-  <img src="${petsList[numbers[1]].img}" alt="${
-    petsList[numbers[1]].name
-  }" class="cardimg">
-  <h3>${petsList[numbers[1]].name}</h3>
-  <div class="cardbutton">
-    <button name="learn_more" class="button button__outlined width">
-      Learn more
-    </button>
-  </div>
-`;
-  card2.innerHTML = animalCard2;
+    const cardContent = `
+      <img src="${pet.img}" alt="${pet.name}" class="cardimg">
+      <h3>${pet.name}</h3>
+      <div class="cardbutton">
+        <button name="learn_more" class="button button__outlined width">
+          Learn more
+        </button>
+      </div>
+    `;
 
-  const animalCard3 = `
-  <img src="${petsList[numbers[2]].img}" alt="${
-    petsList[numbers[2]].name
-  }" class="cardimg">
-  <h3>${petsList[numbers[2]].name}</h3>
-  <div class="cardbutton">
-    <button name="learn_more" class="button button__outlined width">
-      Learn more
-    </button>
-  </div>
-`;
-  card3.innerHTML = animalCard3;
+    cardDiv.innerHTML = cardContent;
+
+    return cardDiv;
+  }
 
   //обнуляю удаляя
   changedCard.innerHTML = "";
+
   // добавляю внутрm еще элемент
-  //todo не по очереди добавлять, а фором
   changedCard.appendChild(card1);
   changedCard.appendChild(card2);
   changedCard.appendChild(card3);
