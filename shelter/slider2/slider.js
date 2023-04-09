@@ -15,7 +15,7 @@ const petsList = [
   {
     id: 1,
     name: "Sophia",
-    img: "assets/images/pets-h270/sophia.png",
+    img: "assets/images/pets-h500/sophia.png",
     type: "Dog",
     breed: "Shih tzu",
     description:
