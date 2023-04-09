@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.item,
+.carousel,
+.card {
+  display: flex;
+}
+
+.carousel-wrapper {
+  width: 760px;
+  /* margin: 0 20px; */
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.card {
+  width: 240px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item {
+  gap: 20px;
+}
+
+.carousel {
+  position: relative;
+  left: -760px;
+}
+
+@keyframes move-right {
+  from {
+    left: -760px;
+  }
+  to {
+    left: -1520px;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: -760px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+.hidden {
+  display: none;
+}

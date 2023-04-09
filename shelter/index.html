@@ -22,8 +22,10 @@
     content="Petfinder has helped more than 25 million pets find their families through adoption. Search our extensive list of dogs, cats and other pets available for adoption and rescue near you.">
   <!-- Styles -->
   <link rel="stylesheet" href="main.css">
+
   <!-- Scripts -->
   <script src="index.js" defer></script>
+  <script src="slider2/slider.js" defer></script>
   <script src="mobile.blocks/nav/burger.js" defer></script>
 </head>
 
@@ -116,63 +118,148 @@
           are looking for a house
         </h2>
 
-        <div class="our-friends__slider-container">
-          <div class="slider__button display__mobile_hide">
+        <!-- <div class="our-friends__slider-container">
+          <div class="slider__button display__mobile_hide" id="btn-left">
+            <button class="button__outlined width rotate-180">
+              <img src="assets/icons/arrow.png" alt="left arrow slider">
+            </button>
+          </div> -->
+
+        <!-- todo: привести список элементов к <ul> и поправить стили -->
+        <div class="wrapper">
+          <!-- <div class="btn" id="btn-left">←</div> -->
+          <div class="slider__button" id="btn-left">
             <button class="button__outlined width rotate-180">
               <img src="assets/icons/arrow.png" alt="left arrow slider">
             </button>
           </div>
-
-          <!-- todo: привести список элементов к <ul> и поправить стили -->
-          <div class="our-friends__slider-inner-container">
-            <div class="card zoom">
-              <img src="assets/images/pets-h270/katrine.png" alt="citty Katrine" class="cardimg">
-              <h3>Katrine</h3>
-              <div class="cardbutton">
-                <button name="learn_more" class="button button__outlined width">
-                  Learn more
-                </button>
+          <div class="carousel-wrapper" id="carousel-wrapper">
+            <div class="carousel" id="carousel">
+              <div class="item" id="item-left">
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/jennifer.png" alt="adult dog Jennifer" class="cardimg">
+                  <h3>Jennifer</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/sophia.png" alt="adult dog Sophia" class="cardimg">
+                  <h3>Sophia</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/woody.png" alt="adult dog Woody" class="cardimg">
+                  <h3>Woody</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
               </div>
-              <div class="card-bottom-element"></div>
-            </div>
-            <div class="card zoom display__mobile">
-              <img src="assets/images/pets-h270/jennifer.png" alt="puppy Jennifer" class="cardimg">
-              <h3>Jennifer</h3>
-              <div class="cardbutton">
-                <button name="learn_more" class="button button__outlined width">
-                  Learn more
-                </button>
+              <div class="item" id="item-active">
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/scarlett.png" alt="adult dog Scarlett" class="cardimg">
+                  <h3>Scarlett</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/katrine.png" alt="adult cat Katrine" class="cardimg">
+                  <h3>Katrine</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/timmy.png" alt="cat Timmy" class="cardimg">
+                  <h3>Timmy</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
               </div>
-              <div class="card-bottom-element"></div>
-            </div>
-            <div class="card zoom display__pad">
-              <img src="assets/images/pets-h270/woody.png" alt="adult dog Woody" class="cardimg">
-              <h3>Woody</h3>
-              <div class="cardbutton">
-                <button name="learn_more" class="button button__outlined width">
-                  Learn more
-                </button>
+              <div class="item" id="item-right">
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/freddie.png" alt="cat Freddie" class="cardimg">
+                  <h3>Freddie</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/charly.png" alt="adult dog Charly" class="cardimg">
+                  <h3>Charly</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
+                <div class="card zoom">
+                  <!-- Содержимое третьего слайда  -->
+                  <img src="assets/images/pets-h270/woody.png" alt="adult dog Woody" class="cardimg">
+                  <h3>Woody</h3>
+                  <div class="cardbutton">
+                    <button name="learn_more" class="button button__outlined width">
+                      Learn more
+                    </button>
+                  </div>
+                  <div class="card-bottom-element"></div>
+                </div>
               </div>
-              <div class="card-bottom-element"></div>
             </div>
           </div>
-          <div class="buttons__slider-container">
-            <div class="slider__button display__mobile_show">
-              <button class="button__outlined width rotate-180">
-                <img src="assets/icons/arrow.png" alt="left arrow slider">
-              </button>
-            </div>
-            <div class="slider__button">
-              <button class="button__outlined width">
-                <img src="assets/icons/arrow.png" alt="right arrow slider">
-              </button>
-            </div>
+          <!-- <div class="btn" id="btn-right">→</div> -->
+          <div class="slider__button" id="btn-right">
+            <button class="button__outlined width">
+              <img src="assets/icons/arrow.png" alt="right arrow slider">
+            </button>
           </div>
         </div>
 
-        <button onclick="document.location='pets'" class="button__elevated width">
-          Get to know the rest
-        </button>
+
+        <div class="buttons__slider-container">
+
+
+        </div>
+      </div>
+
+      <button onclick="document.location='pets'" class="button__elevated width">
+        Get to know the rest
+      </button>
       </div>
     </section>
 
