@@ -16,7 +16,7 @@
 }
 
 .carousel-wrapper {
-  width: 640px;
+  width: 900px;
   margin: 0 20px;
   overflow: hidden;
 }
@@ -24,14 +24,14 @@
 .card {
   width: 200px;
   height: 200px;
-  background: red;
+  /* background: red; */
   justify-content: center;
   align-items: center;
   font-size: 100px;
   cursor: pointer;
 }
 
-.card.activated {
+/* .card.activated {
   background: #ccc;
 }
 
@@ -41,7 +41,7 @@
 
 .item:last-child .card {
   background: LightSkyBlue;
-}
+} */
 
 .item {
   gap: 20px;
@@ -54,10 +54,10 @@
 
 @keyframes move-right {
   from {
-    left: -640px;
+    left: -750px;
   }
   to {
-    left: -1280px;
+    left: -1580px;
   }
 }
 

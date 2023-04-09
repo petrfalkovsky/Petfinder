@@ -114,10 +114,9 @@ const itemRight = document.querySelector("#item-right");
 
 //создаю шаблон карточки
 function createCardElement() {
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  return card;
+  const cardDiv = document.createElement("div");
+  cardDiv.classList.add("card", "zoom");
+  return cardDiv;
 }
 
 function moveLeft() {
@@ -161,13 +160,48 @@ carousel.addEventListener("animationend", (animationEvent) => {
 
   // генерирую карточку
   const card1 = createCardElement();
-  card1.innerText = numbers[0];
-  // генерирую карточку
   const card2 = createCardElement();
-  card2.innerText = numbers[1];
-  // генерирую карточку
   const card3 = createCardElement();
-  card3.innerText = numbers[2];
+
+  // Заполняем каждую карточку одним животным
+  const animalCard1 = `
+  <img src="${petsList[numbers[0]].img}" alt="${
+    petsList[numbers[0]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[0]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card1.innerHTML = animalCard1;
+
+  const animalCard2 = `
+  <img src="${petsList[numbers[1]].img}" alt="${
+    petsList[numbers[1]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[1]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card2.innerHTML = animalCard2;
+
+  const animalCard3 = `
+  <img src="${petsList[numbers[2]].img}" alt="${
+    petsList[numbers[2]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[2]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card3.innerHTML = animalCard3;
 
   //обнуляю удаляя
   changedCard.innerHTML = "";

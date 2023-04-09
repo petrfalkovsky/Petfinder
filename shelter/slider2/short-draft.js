@@ -1,8 +1,9 @@
-const cards = [
+// Список животных
+const petsList = [
   {
     id: 0,
     name: "Jennifer",
-    img: "../assets/images/pets-h270/jennifer.png",
+    img: "../assets/images/pets-h270/woody.png",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -37,95 +38,152 @@ const cards = [
     inoculations: ["adenovirus", "distemper"],
     diseases: ["right back leg mobility reduced"],
     parasites: ["none"]
+  },
+  {
+    id: 3,
+    name: "Scarlett",
+    img: "../assets/images/pets-h270/scarlett.png",
+    type: "Dog",
+    breed: "Jack Russell Terrier",
+    description:
+      "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
+    age: "3 months",
+    inoculations: ["parainfluenza"],
+    diseases: ["none"],
+    parasites: ["none"]
+  },
+  {
+    id: 4,
+    name: "Katrine",
+    img: "../assets/images/pets-h270/katrine.png",
+    type: "Cat",
+    breed: "British Shorthair",
+    description:
+      "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
+    age: "6 months",
+    inoculations: ["panleukopenia"],
+    diseases: ["none"],
+    parasites: ["none"]
+  },
+  {
+    id: 5,
+    name: "Timmy",
+    img: "../assets/images/pets-h270/timmy.png",
+    type: "Cat",
+    breed: "British Shorthair",
+    description:
+      "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
+    age: "2 years 3 months",
+    inoculations: ["calicivirus", "viral rhinotracheitis"],
+    diseases: ["kidney stones"],
+    parasites: ["none"]
+  },
+  {
+    id: 6,
+    name: "Freddie",
+    img: "../assets/images/pets-h270/freddie.png",
+    type: "Cat",
+    breed: "British Shorthair",
+    description:
+      "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
+    age: "2 months",
+    inoculations: ["rabies"],
+    diseases: ["none"],
+    parasites: ["none"]
+  },
+  {
+    id: 7,
+    name: "Charly",
+    img: "../assets/images/pets-h270/charly.png",
+    type: "Dog",
+    breed: "Jack Russell Terrier",
+    description:
+      "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
+    age: "8 years",
+    inoculations: ["bordetella bronchiseptica", "leptospirosis"],
+    diseases: ["deafness", "blindness"],
+    parasites: ["lice", "fleas"]
   }
 ];
-const cardCount = {
-  320: 1,
-  768: 2,
-  1280: 3
-};
 
-const slider = document.querySelector(".slider");
-const container = slider.querySelector(".slider-container");
-const wrapper = slider.querySelector(".slider-wrapper");
-const prevButton = slider.querySelector(".slider-prev");
-const nextButton = slider.querySelector(".slider-next");
-
-let currentIndex = 0;
-let prevIndex = null;
-let width = slider.offsetWidth;
-let cardNumber = cardCount[width];
-let cardIndexes = generateIndexes();
-
-function generateIndexes() {
-  const indexes = [];
-  for (let i = 0; i < cards.length; i++) {
-    indexes.push(i);
-  }
-  return shuffleArray(indexes);
+// Генерация псевдослучайного списка животных
+function generateAnimalList() {
+  const currentList = JSON.parse(localStorage.getItem("animalList")) || [];
+  let nextList = [];
+  do {
+    nextList = petsList
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3)
+      .filter((animal) => !currentList.includes(animal));
+  } while (nextList.length < 3);
+  localStorage.setItem("animalList", JSON.stringify(nextList));
+  return nextList;
 }
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
+// Создание карточек животных
+function createAnimalCards(petsList) {
+  return petsList
+    .map(
+      (animal) =>
+        `<div class="animal-card">
+          <img src="${animal.img}" alt="${animal.name}">
+          <p>${animal.name}</p>
+          <div class="card-bottom-element"></div>
+        </div>
+        `
+    )
+    .join("");
 }
 
-function createCardElement(card) {
-  const cardElement = document.createElement("div");
-  cardElement.classList.add("slider-card");
-  cardElement.innerHTML = `
-    <img src="${card.img}" alt="${card.name}">
-    <div class="slider-card-info">
-      <h3>${card.name}</h3>
-      <p>${card.description}</p>
-    </div>
-  `;
-  return cardElement;
-}
+// Переключение слайдов
+function slide(direction) {
+  const slider = document.querySelector(".slider");
+  const currentTranslate = parseInt(
+    slider.style.transform.replace("translateX(", "").replace("px)", "")
+  );
+  const slide = document.querySelector(".slide");
+  const slideWidth = slide ? slide.offsetWidth : 0;
+  const slideCount = slider.querySelectorAll(".slide").length;
+  const visibleSlides = Math.floor(window.innerWidth / slideWidth);
+  const maxTranslate = -1 * slideWidth * (slideCount - visibleSlides);
 
-function renderCards() {
-  wrapper.innerHTML = "";
-  for (let i = 0; i < cardNumber; i++) {
-    const cardIndex = cardIndexes[i];
-    const card = cards[cardIndex];
-    const cardElement = createCardElement(card);
-    wrapper.appendChild(cardElement);
-  }
-}
-
-function switchCards(direction) {
-  if (direction === "prev") {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = cards.length - cardNumber;
+  let newTranslate = currentTranslate;
+  if (direction === "left" && currentTranslate < 0) {
+    newTranslate = currentTranslate + slideWidth * visibleSlides;
+    if (newTranslate > 0) {
+      newTranslate = 0;
     }
-  } else {
-    currentIndex++;
-    if (currentIndex > cards.length - cardNumber) {
-      currentIndex = 0;
+  } else if (direction === "right" && currentTranslate > maxTranslate) {
+    newTranslate = currentTranslate - slideWidth * visibleSlides;
+    if (newTranslate < maxTranslate) {
+      newTranslate = maxTranslate;
     }
   }
-  prevIndex = currentIndex;
-  cardIndexes = generateIndexes();
-  renderCards();
-  wrapper.style.transform = `translateX(-${
-    currentIndex * (100 / cardNumber)
-  }%)`;
+
+  slider.style.transform = `translateX(${newTranslate}px)`;
 }
 
-prevButton.addEventListener("click", () => switchCards("prev"));
-nextButton.addEventListener("click", () => switchCards("next"));
+// Инициализация слайдера
+function initSlider() {
+  const slider = document.querySelector(".slider");
+  const animalList = generateAnimalList();
+  slider.innerHTML = createAnimalCards(animalList).repeat(3);
 
-window.addEventListener("resize", () => {
-  const newWidth = slider.offsetWidth;
-  if (newWidth !== width) {
-    width = newWidth;
-    cardNumber = cardCount[width];
-    switchCards("next");
-  }
-});
+  const leftArrow = document.querySelector(".arrow.left");
+  leftArrow.addEventListener("click", () => slide("left"));
 
-switchCards("next");
+  const rightArrow = document.querySelector(".arrow.right");
+  rightArrow.addEventListener("click", () => slide("right"));
+
+  window.addEventListener("resize", () => {
+    const visibleSlides = Math.floor(
+      window.innerWidth / document.querySelector(".slide").offsetWidth
+    );
+    slider.innerHTML = createAnimalCards(generateAnimalList()).repeat(
+      visibleSlides + 2
+    );
+    slider.style.transform = "translateX(0)";
+  });
+}
+
+initSlider();

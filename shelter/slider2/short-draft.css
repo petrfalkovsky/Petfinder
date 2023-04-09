@@ -1,29 +1,39 @@
-.slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
 .slider-container {
   display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
 }
 
-.slider-wrapper {
+.slider {
   display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
 }
 
-.slider-prev,
-.slider-next {
+.slide {
+  flex: 0 0 calc(100% / 3); /* Для 1280px */
+  /* flex: 0 0 calc(100% / 2); для 768px */
+  /* flex: 0 0 100%; для 320px */
+}
+
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.slider-prev {
-  left: 0;
+.arrow.left {
+  left: 10px;
+  background-image: url(../assets/icons/arrow.png); /* Своя иконка стрелки влево */
 }
 
-.slider-next {
-  right: 0;
+.arrow.right {
+  right: 10px;
+  background-image: url(../assets/icons/arrow.png); /* Своя иконка стрелки вправо */
 }
