@@ -149,44 +149,92 @@ carousel.addEventListener("animationend", (animationEvent) => {
   }
 
   // генерирую уникальные числа
-  let numbers = [];
+  function generateUniqueNumbers() {
+    let uniqueNumbers = [];
 
-  while (numbers.length < 3) {
-    const randomNumber = Math.floor(Math.random() * 8);
-    if (!numbers.includes(randomNumber)) {
-      numbers.push(randomNumber);
+    // если есть, достаю из localStorage, чтоб сравнить
+    const localStorageNumbers = localStorage.getItem("uniqueNumbers");
+    if (localStorageNumbers) {
+      uniqueNumbers = JSON.parse(localStorageNumbers);
     }
+
+    // генерю
+    let isNewNumbersUnique = false;
+    while (!isNewNumbersUnique) {
+      let newNumbers = [];
+      while (newNumbers.length < 3) {
+        const randomNumber = Math.floor(Math.random() * 8);
+        if (
+          !newNumbers.includes(randomNumber) &&
+          !uniqueNumbers.includes(randomNumber)
+        ) {
+          newNumbers.push(randomNumber);
+        }
+      }
+      if (newNumbers.length === 3) {
+        isNewNumbersUnique = true;
+        uniqueNumbers = newNumbers;
+      }
+    }
+
+    // сохраняю в локалсторидже
+    localStorage.setItem("uniqueNumbers", JSON.stringify(uniqueNumbers));
+
+    return uniqueNumbers;
   }
+
+  const numbers = generateUniqueNumbers();
+  console.log(numbers);
 
   // генерирую карточку
-  const card1 = createCard(petsList[numbers[0]]);
-  const card2 = createCard(petsList[numbers[1]]);
-  const card3 = createCard(petsList[numbers[2]]);
+  const card1 = createCardElement();
+  const card2 = createCardElement();
+  const card3 = createCardElement();
 
-  // Заполняем каждую карточку одним животным
-  function createCard(pet) {
-    const cardDiv = document.createElement("div");
-    cardDiv.classList.add("card", "zoom");
+  // заполняем каждую карточку одним животным
+  const animalCard1 = `
+  <img src="${petsList[numbers[0]].img}" alt="${
+    petsList[numbers[0]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[0]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card1.innerHTML = animalCard1;
 
-    const cardContent = `
-      <img src="${pet.img}" alt="${pet.name}" class="cardimg">
-      <h3>${pet.name}</h3>
-      <div class="cardbutton">
-        <button name="learn_more" class="button button__outlined width">
-          Learn more
-        </button>
-      </div>
-    `;
+  const animalCard2 = `
+  <img src="${petsList[numbers[1]].img}" alt="${
+    petsList[numbers[1]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[1]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card2.innerHTML = animalCard2;
 
-    cardDiv.innerHTML = cardContent;
-
-    return cardDiv;
-  }
+  const animalCard3 = `
+  <img src="${petsList[numbers[2]].img}" alt="${
+    petsList[numbers[2]].name
+  }" class="cardimg">
+  <h3>${petsList[numbers[2]].name}</h3>
+  <div class="cardbutton">
+    <button name="learn_more" class="button button__outlined width">
+      Learn more
+    </button>
+  </div>
+`;
+  card3.innerHTML = animalCard3;
 
   //обнуляю удаляя
   changedCard.innerHTML = "";
-
   // добавляю внутрm еще элемент
+  //todo не по очереди добавлять, а фором
   changedCard.appendChild(card1);
   changedCard.appendChild(card2);
   changedCard.appendChild(card3);
