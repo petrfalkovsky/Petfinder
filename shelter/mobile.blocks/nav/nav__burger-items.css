@@ -18,16 +18,6 @@
   font-size: var(--font-sizelogo-title);
 }
 
-.nav__link_active-burger {
-  cursor: default;
-  color: var(--font-colornav__link_active);
-  font-family: var(--font-familynav__link);
-  width: min-content;
-  height: min-content;
-  white-space: nowrap;
-  flex-direction: column;
-}
-
 .nav__link_active-border-burger {
   margin-top: 0.313rem;
   height: 0.188rem;
@@ -47,6 +37,16 @@
 
 .nav__link:hover-burger {
   color: var(--font-colornav__link_active);
+}
+
+.nav__link_active-burger {
+  cursor: default;
+  color: var(--font-colornav__link_active);
+  font-family: var(--font-familynav__link);
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
 }
 
 /* для петс пейдж */
