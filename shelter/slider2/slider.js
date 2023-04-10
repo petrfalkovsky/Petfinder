@@ -183,15 +183,25 @@ carousel.addEventListener("animationend", (animationEvent) => {
     return uniqueNumbers;
   }
 
-  const numbers = generateUniqueNumbers();
+  let useRandomNumbers = true;
+  let numbers;
+
+  if (!localStorage.getItem("randomNumbers")) {
+    // генерируем случайные числа только при первой загрузке страницы
+    numbers = generateUniqueNumbers();
+    localStorage.setItem("randomNumbers", JSON.stringify(numbers));
+  } else {
+    // используем сохраненные числа, если они есть
+    useRandomNumbers = false;
+    numbers = JSON.parse(localStorage.getItem("randomNumbers"));
+  }
+
   console.log(numbers);
 
-  // генерирую карточку
   const card1 = createCardElement();
   const card2 = createCardElement();
   const card3 = createCardElement();
 
-  // заполняем каждую карточку одним животным
   const animalCard1 = `
   <img src="${petsList[numbers[0]].img}" alt="${
     petsList[numbers[0]].name
@@ -231,14 +241,16 @@ carousel.addEventListener("animationend", (animationEvent) => {
 `;
   card3.innerHTML = animalCard3;
 
-  //обнуляю удаляя
   changedCard.innerHTML = "";
-  // добавляю внутрm еще элемент
-  //todo не по очереди добавлять, а фором
   changedCard.appendChild(card1);
   changedCard.appendChild(card2);
   changedCard.appendChild(card3);
 
   btnLeft.addEventListener("click", moveLeft);
   btnRight.addEventListener("click", moveRight);
+
+  // если мы использовали сохраненные числа, то флаг useRandomNumbers будет равен false
+  if (useRandomNumbers) {
+    localStorage.removeItem("randomNumbers");
+  }
 });

@@ -6,45 +6,4 @@
   .nav__list {
     display: none;
   }
-
-  .nav__burger-container {
-    position: relative;
-    width: 1.875rem;
-    height: 1.375rem;
-    cursor: pointer;
-    margin-top: 0.75rem;
-  }
-
-  .nav__burger,
-  .nav__burger:before,
-  .nav__burger:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--colorprimary_dark);
-  }
-
-  .nav__burger:before {
-    top: -10px;
-  }
-
-  .nav__burger:after {
-    bottom: -10px;
-  }
-
-  .nav__burger-container.active .nav__burger:before {
-    transform: translateY(20px) rotate(-0deg);
-    /* background-color: aqua; */
-  }
-
-  .nav__burger-container.active .nav__burger:after {
-    transform: translateY(-20px) translateX(-0px) rotate(-0deg);
-    /* background-color: red; */
-  }
-
-  .nav__burger-container.active .nav__burger {
-    transform: rotate(-90deg);
-  }
 }
