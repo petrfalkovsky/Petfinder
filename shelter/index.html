@@ -35,6 +35,10 @@
     <!-- Hero Section -->
     <section id="hero" class="hero__back">
       <header>
+
+        <div class="nav__overlay">
+        </div>
+
         <nav class="nav">
           <a href="#">
             <div class="nav__logo">
@@ -42,9 +46,33 @@
               <p class="nav__logo-description">Shelter for pets in Almaty</p>
             </div>
           </a>
-          <div class="nav__burger-container">
-            <div class="nav__burger active "></div>
+          <div id="burger">
+            <!-- burger -->
+            <div class="nav__burger-container">
+              <div class="nav__burger active "></div>
+            </div>
+
+            <div class="nav__menu">
+              <ul class="nav__list-burger">
+                <li class="nav__item-burger">
+                  <a href="#" class="nav__link-burger nav__link_active-burger">
+                    About the shelter
+                  </a>
+                  <div class="nav__link_active-border-burger"></div>
+                </li>
+                <li class="nav__item-burger">
+                  <a href="pets" class="nav__link-burger">Our pets</a>
+                </li>
+                <li class="nav__item-burger">
+                  <a href="#help" class="nav__link-burger">Help the shelter</a>
+                </li>
+                <li class="nav__item-burger">
+                  <a href="#footer" class="nav__link-burger">Contacts</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <!-- burger end -->
 
           <ul class="nav__list">
             <li class="nav__item">
@@ -149,7 +177,7 @@
                 </div>
                 <div class="card zoom">
                   <!-- Содержимое третьего слайда  -->
-                  <img src="assets/images/pets-h270/sophia.png" alt="adult dog Sophia" class="cardimg">
+                  <img src="assets/images/pets-h500/sophia.png" alt="adult dog Sophia" class="cardimg">
                   <h3>Sophia</h3>
                   <div class="cardbutton">
                     <button name="learn_more" class="button button__outlined width">
@@ -255,11 +283,11 @@
 
 
         </div>
-      </div>
 
-      <button onclick="document.location='pets'" class="button__elevated width">
-        Get to know the rest
-      </button>
+
+        <button onclick="document.location='pets'" class="button__elevated width">
+          Get to know the rest
+        </button>
       </div>
     </section>
 

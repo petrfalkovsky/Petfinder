@@ -82,8 +82,8 @@
 @import "mobile.blocks/card/card.css";
 @import "mobile.blocks/our-friends/pagination-container/pagination-container.css";
 @import "slider2/slider.css";
-@import "";
-@import "";
+@import "mobile.blocks/nav/nav__burger.css";
+@import "mobile.blocks/nav/nav__burger-items.css";
 @import "";
 
 @font-face {
