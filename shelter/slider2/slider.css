@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   align-items: center;
+  gap: 54px;
 }
 
 .btn {
@@ -13,12 +14,11 @@
   display: flex;
 }
 
-.carousel-wrapper {
+/* .carousel-wrapper {
   width: 760px;
-  /* margin: 0 20px; */
   margin: 0px auto;
   overflow: hidden;
-}
+} */
 
 .card {
   width: 240px;
@@ -27,22 +27,13 @@
   cursor: pointer;
 }
 
-.item {
+/* .item {
   gap: 20px;
 }
 
 .carousel {
   position: relative;
   left: -760px;
-}
-
-@keyframes move-right {
-  from {
-    left: -760px;
-  }
-  to {
-    left: -1520px;
-  }
 }
 
 .transition-right {
@@ -59,6 +50,53 @@
   }
 }
 
+@keyframes move-right {
+  from {
+    left: -760px;
+  }
+  to {
+    left: -1520px;
+  }
+} */
+
+.carousel-wrapper {
+  width: 990px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.item {
+  gap: 135px;
+}
+
+.carousel {
+  position: relative;
+  left: -990px;
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: -990px;
+  }
+  to {
+    left: -1980px;
+  }
+}
+
 .transition-left {
   animation-name: move-left;
   animation-duration: 1s;
@@ -68,21 +106,70 @@
   display: none;
 }
 
-.fade-in {
-  opacity: 0;
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+@media (max-width: 1279.9px) {
+  .item {
+    gap: 20px;
+  }
+
+  .carousel-wrapper {
+    width: 507px;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+
+  .carousel {
+    left: -507px;
+  }
+
+  @keyframes move-left {
+    from {
+      left: -507px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      left: -507px;
+    }
+    to {
+      left: -1014px;
+    }
+  }
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateX(50%);
+@media (max-width: 767.9px) {
+  .item {
+    gap: 20px;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+
+  .carousel-wrapper {
+    width: 254px;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+
+  .carousel {
+    left: -254px;
+  }
+
+  @keyframes move-left {
+    from {
+      left: -254px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  @keyframes move-right {
+    from {
+      left: -254px;
+    }
+    to {
+      left: -508px;
+    }
   }
 }

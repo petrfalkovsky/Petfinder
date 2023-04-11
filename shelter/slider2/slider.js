@@ -187,11 +187,9 @@ carousel.addEventListener("animationend", (animationEvent) => {
   let numbers;
 
   if (!localStorage.getItem("randomNumbers")) {
-    // генерируем случайные числа только при первой загрузке страницы
     numbers = generateUniqueNumbers();
     localStorage.setItem("randomNumbers", JSON.stringify(numbers));
   } else {
-    // используем сохраненные числа, если они есть
     useRandomNumbers = false;
     numbers = JSON.parse(localStorage.getItem("randomNumbers"));
   }
@@ -249,7 +247,6 @@ carousel.addEventListener("animationend", (animationEvent) => {
   btnLeft.addEventListener("click", moveLeft);
   btnRight.addEventListener("click", moveRight);
 
-  // если мы использовали сохраненные числа, то флаг useRandomNumbers будет равен false
   if (useRandomNumbers) {
     localStorage.removeItem("randomNumbers");
   }
