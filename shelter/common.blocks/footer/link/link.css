@@ -1,0 +1,19 @@
+.footer__link {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 1.25rem;
+  flex-direction: row;
+  min-width: 18.875rem;
+
+  color: var(--colorprimary_dark);
+  font-family: var(--font-familygeorgia);
+  font-size: var(--font-sizeh3);
+  line-height: var(--line-heightp-115);
+  letter-spacing: var(--letter-spacing_h);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: var(--colorprimary_light);
+}

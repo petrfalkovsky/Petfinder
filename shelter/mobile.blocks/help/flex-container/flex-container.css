@@ -1,0 +1,6 @@
+@media (max-width: 767.9px) {
+  .help__flex-container {
+    justify-content: space-between;
+    row-gap: 1.875rem;
+  }
+}

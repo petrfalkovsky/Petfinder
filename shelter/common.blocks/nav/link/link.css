@@ -1,0 +1,18 @@
+.nav__link {
+  color: var(--font-colornav__link);
+  text-decoration: none;
+  font-family: var(--font-familyarial);
+}
+
+.nav__link:hover {
+  color: var(--font-colornav__link_active);
+}
+
+#pets-page .nav__link {
+  color: var(--font-colornav__link_dark);
+  font-family: var(--font-familyarial);
+}
+
+#pets-page .nav__link:hover {
+  color: var(--font-colornav__link_dark_active);
+}

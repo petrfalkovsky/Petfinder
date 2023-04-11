@@ -1,0 +1,17 @@
+@media (max-width: 767.9px) {
+  #hero h1 {
+    max-width: 12rem;
+    padding-bottom: 2.5rem;
+    line-height: 2.031rem;
+    font-size: 1.563rem;
+    margin: 0 auto;
+    letter-spacing: 1.1px;
+  }
+
+  .hero__content-conainer p {
+    color: var(--colorhero-sectionp);
+    max-width: 18.8rem;
+    padding-bottom: 2.5rem;
+    margin: auto;
+  }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 767.9px) {
+  .our-friends__slider-inner-container {
+    flex-direction: column;
+    width: 18rem;
+  }
+
+  #pets-page .our-friends__slider-inner-container {
+    width: 100%;
+  }
+}

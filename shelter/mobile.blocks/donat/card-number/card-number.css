@@ -1,0 +1,9 @@
+@media (max-width: 767.9px) {
+  .donat__card-number {
+    width: 17.53rem;
+    height: 2.125rem;
+    font-size: 0.938rem;
+    column-gap: 13px;
+    justify-content: start;
+  }
+}

@@ -1,0 +1,9 @@
+@media (max-width: 767.9px) {
+  .nav {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .nav__list {
+    display: none;
+  }
+}

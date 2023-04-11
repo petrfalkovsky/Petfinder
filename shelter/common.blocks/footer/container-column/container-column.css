@@ -1,0 +1,13 @@
+#contact.footer__column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.438rem;
+  padding-top: 1rem;
+}
+
+#locate.footer__column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.063rem;
+  padding-top: 1rem;
+}

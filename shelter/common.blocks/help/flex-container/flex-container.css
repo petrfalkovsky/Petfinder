@@ -1,0 +1,11 @@
+.help__flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 4.063rem;
+  max-width: 75.375rem;
+  row-gap: 3.438rem;
+}

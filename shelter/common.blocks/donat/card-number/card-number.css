@@ -1,0 +1,17 @@
+.donat__card-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--colorprimary_dark);
+  border-radius: 0.563rem;
+  width: 21.813rem;
+  min-height: 2.125rem;
+  font-size: 1.25rem;
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+}
+
+.donat__card-number h4:hover {
+  color: var(--font-colornav__link_active_dark);
+}

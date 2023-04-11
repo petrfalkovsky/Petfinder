@@ -1,0 +1,15 @@
+#our-friends .slider__button .button__outlined.width {
+  width: 3.25rem;
+}
+
+.button__outlined img {
+  display: block;
+  margin: auto;
+}
+
+#pets-page .slider__button {
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  padding-bottom: 6.3rem;
+}

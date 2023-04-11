@@ -1,0 +1,22 @@
+@media (max-width: 1279.9px) {
+  .our-friends__slider-inner-container {
+    max-width: 36.25rem;
+    gap: 2.2rem;
+    overflow: hidden;
+    width: 38rem;
+  }
+
+  #main-page .display__pad {
+    display: none;
+  }
+
+  #pets-page .display__pad {
+    display: none;
+  }
+
+  #pets-page .our-friends__slider-inner-container {
+    row-gap: 1.975rem;
+    column-gap: 4rem;
+    width: 34.438rem;
+  }
+}

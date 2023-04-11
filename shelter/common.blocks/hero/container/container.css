@@ -1,0 +1,12 @@
+.hero__container {
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}

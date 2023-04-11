@@ -1,0 +1,50 @@
+#burger ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 43px;
+  transform: translateX(39px);
+}
+
+.nav__item-burger {
+  font-size: var(--font-sizelogo-title);
+}
+
+.nav__link_active-border-burger {
+  margin-top: 0.313rem;
+  height: 0.188rem;
+  align-self: stretch;
+  background-color: var(--colorprimary_dark);
+}
+
+.nav__link-burger {
+  color: var(--font-colornav__link);
+  text-decoration: none;
+  font-family: var(--font-familyarial);
+}
+
+.nav__link:hover-burger {
+  color: var(--font-colornav__link_active);
+}
+
+.nav__link_active-burger {
+  cursor: default;
+  color: var(--font-colornav__link_active);
+  font-family: var(--font-familynav__link);
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

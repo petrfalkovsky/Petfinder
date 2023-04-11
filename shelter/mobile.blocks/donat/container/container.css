@@ -1,0 +1,14 @@
+@media (max-width: 767.9px) {
+  .donat__container {
+    padding-top: 2.7rem;
+    padding-bottom: 2.6rem;
+    text-align: center;
+    gap: 2.15rem;
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+  }
+
+  .donat__container article {
+    gap: 1.45rem;
+  }
+}

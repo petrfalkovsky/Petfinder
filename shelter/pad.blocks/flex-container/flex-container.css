@@ -1,0 +1,6 @@
+@media (max-width: 1279.9px) {
+  .help__flex-container {
+    align-content: center;
+    column-gap: 0.5rem;
+  }
+}

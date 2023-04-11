@@ -1,0 +1,10 @@
+button {
+  font-family: var(--font-familybutton);
+  font-weight: var(--font-weightbutton);
+  font-size: var(--line-heightbutton);
+  line-height: var(--line-heightbutton);
+  color: var(--font-colorbutton);
+  border-radius: 7rem;
+  height: 3.25rem;
+  letter-spacing: var(--letter-spacing_h);
+}
