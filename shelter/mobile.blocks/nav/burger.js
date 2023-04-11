@@ -47,9 +47,3 @@ document.addEventListener("click", function (event) {
     overlay.classList.remove("active");
   }
 });
-
-// document.addEventListener("click", function (event) {
-//   const isClickInsideMenu = menu.contains(event.target);
-//   const isClickInsideBurger = burgerContainer.contains(event.target);
-//   const isMenuOpen = menu.classList.contains("active");
-// });
