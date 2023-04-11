@@ -27,6 +27,7 @@
   <script src="index.js" defer></script>
   <script src="slider2/slider.js" defer></script>
   <script src="mobile.blocks/nav/burger.js" defer></script>
+  <script src="common.blocks/modal/modal.js" defer></script>
 </head>
 
 <body id="main-page">
@@ -36,8 +37,6 @@
     <section id="hero" class="hero__back">
       <header>
 
-        <div class="nav__overlay">
-        </div>
 
         <nav class="nav">
           <a href="#">
@@ -46,8 +45,12 @@
               <p class="nav__logo-description">Shelter for pets in Almaty</p>
             </div>
           </a>
+
+          <!-- burger -->
+          <div class="nav__overlay">
+          </div>
+
           <div id="burger">
-            <!-- burger -->
             <div class="nav__burger-container">
               <div class="nav__burger active "></div>
             </div>
@@ -138,6 +141,8 @@
       </div>
     </div>
 
+
+
     <!-- Our Friends Section -->
     <section id="our-friends" class="our-friends__back">
       <div class="our-friends__container">
@@ -152,6 +157,18 @@
               <img src="assets/icons/arrow.png" alt="left arrow slider">
             </button>
           </div> -->
+
+
+        <!-- Modal card desc -->
+        <div id="modal-container" class="modal-container">
+          <div class="modal-content">
+
+            <button id="close-modal">Закрыть </button>
+          </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+
+
 
         <!-- todo: привести список элементов к <ul> и поправить стили -->
         <div class="wrapper">
@@ -396,6 +413,8 @@
       <img src="assets/images/footer-puppy.png" alt="the puppy lies and looks at you">
     </div>
   </div>
+
+
 </body>
 
 </html>

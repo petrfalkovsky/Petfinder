@@ -84,7 +84,7 @@
 @import "slider2/slider.css";
 @import "mobile.blocks/nav/nav__burger.css";
 @import "mobile.blocks/nav/nav__burger-items.css";
-@import "";
+@import "common.blocks/modal/modals.css";
 
 @font-face {
   font-family: "Arial";
