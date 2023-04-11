@@ -1,11 +1,13 @@
 const burgerContainer = document.querySelector(".nav__burger-container");
 const menu = document.querySelector(".nav__menu");
 const overlay = document.querySelector(".nav__overlay");
+const body = document.querySelector("body");
 
 burgerContainer.addEventListener("click", function () {
   this.classList.toggle("active");
   menu.classList.toggle("active");
   overlay.classList.toggle("active");
+  body.classList.toggle("no-scroll");
 });
 
 function createMobileMenu() {
@@ -29,10 +31,12 @@ document.addEventListener("click", function (event) {
     burgerContainer.classList.remove("active");
     menu.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("no-scroll");
   } else if (isClickInsideMenu && isMenuOpen) {
     burgerContainer.classList.remove("active");
     menu.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("no-scroll");
   } else if (
     !isClickInsideMenu &&
     !isClickInsideBurger &&
@@ -45,5 +49,6 @@ document.addEventListener("click", function (event) {
     burgerContainer.classList.remove("active");
     menu.classList.remove("active");
     overlay.classList.remove("active");
+    body.classList.remove("no-scroll");
   }
 });

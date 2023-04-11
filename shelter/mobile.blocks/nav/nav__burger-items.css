@@ -25,10 +25,6 @@
   background-color: var(--colorprimary_dark);
 }
 
-#pets-page .nav__link_active-burger {
-  color: var(--font-colornav__link_dark_active);
-}
-
 .nav__link-burger {
   color: var(--font-colornav__link);
   text-decoration: none;
@@ -49,12 +45,6 @@
   flex-direction: column;
 }
 
-/* для петс пейдж */
-/*  .nav__link-burger {
-  color: var(--font-colornav__link_dark);
-  font-family: var(--font-familyarial);
+.no-scroll {
+  overflow: hidden;
 }
-
- .nav__link:hover-burger {
-  color: var(--font-colornav__link_dark_active);
-} */
